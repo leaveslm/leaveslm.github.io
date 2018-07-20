@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="mysql,windows," />
 
 
 
@@ -79,16 +79,18 @@
 
 
 
-<meta name="description" content="既然来了，那就花几分钟看一下吧">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Notes For Leaves">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta name="description" content="MySQL 5.7.xx ZIP版本配置方案MySQL 5.7.22 官方下载地址MySQL 官方配置参数查询 一、下载 MySQL 5.7.xx zip 安装包本机以 Windows10 64 位系统为例进入 Oracel 官网，选择 MySQL Windows (x86, 64-bit), ZIP Archive 下载包点此下载    二、解压安装包将MySQL数据库解压至目录 D:\Prog">
+<meta name="keywords" content="mysql,windows">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Windows 安装 MySQL 5.7">
+<meta property="og:url" content="http://yoursite.com/2018/04/24/Windows 安装 MySQL 5.7/index.html">
 <meta property="og:site_name" content="Notes For Leaves">
-<meta property="og:description" content="既然来了，那就花几分钟看一下吧">
+<meta property="og:description" content="MySQL 5.7.xx ZIP版本配置方案MySQL 5.7.22 官方下载地址MySQL 官方配置参数查询 一、下载 MySQL 5.7.xx zip 安装包本机以 Windows10 64 位系统为例进入 Oracel 官网，选择 MySQL Windows (x86, 64-bit), ZIP Archive 下载包点此下载    二、解压安装包将MySQL数据库解压至目录 D:\Prog">
 <meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2018-07-18T09:26:13.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Notes For Leaves">
-<meta name="twitter:description" content="既然来了，那就花几分钟看一下吧">
+<meta name="twitter:title" content="Windows 安装 MySQL 5.7">
+<meta name="twitter:description" content="MySQL 5.7.xx ZIP版本配置方案MySQL 5.7.22 官方下载地址MySQL 官方配置参数查询 一、下载 MySQL 5.7.xx zip 安装包本机以 Windows10 64 位系统为例进入 Oracel 官网，选择 MySQL Windows (x86, 64-bit), ZIP Archive 下载包点此下载    二、解压安装包将MySQL数据库解压至目录 D:\Prog">
 
 
 
@@ -118,13 +120,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/04/24/Windows 安装 MySQL 5.7/"/>
 
 
 
 
 
-  <title>Notes For Leaves</title>
+  <title>Windows 安装 MySQL 5.7 | Notes For Leaves</title>
   
 
 
@@ -143,8 +145,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -271,164 +272,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/07/18/Linux 安装  MySQL 5.7 /">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Leaves">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/uploads/avatar.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Notes For Leaves">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/07/18/Linux 安装  MySQL 5.7 /" itemprop="url">Linux 安装 MySQL 5.7</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-07-18T17:05:28+08:00">
-                2018-07-18
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/基础服务/" itemprop="url" rel="index">
-                    <span itemprop="name">基础服务</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-          MySQL 5.7.22 官方下载地址
-清理 MySQL、下载解压清理  
-
-find / -name mysql | xargs rm -rf  
-
-下载  
-
-wget https://dev.mysql.com/get/Downloads/MySQL-5.7/mysql-5.7.22-linu
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2018/07/18/Linux 安装  MySQL 5.7 /#more" rel="contents">
-              Read more &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
 
   
 
@@ -458,9 +304,7 @@ wget https://dev.mysql.com/get/Downloads/MySQL-5.7/mysql-5.7.22-linu
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/04/24/Windows 安装 MySQL 5.7/" itemprop="url">Windows 安装 MySQL 5.7</a></h1>
+          <h1 class="post-title" itemprop="name headline">Windows 安装 MySQL 5.7</h1>
         
 
         <div class="post-meta">
@@ -514,6 +358,11 @@ wget https://dev.mysql.com/get/Downloads/MySQL-5.7/mysql-5.7.22-linu
           
 
           
+            <span class="post-meta-divider">|</span>
+            <span class="page-pv"><i class="fa fa-file-o"></i>
+            <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>
+            </span>
+          
 
           
 
@@ -532,19 +381,64 @@ wget https://dev.mysql.com/get/Downloads/MySQL-5.7/mysql-5.7.22-linu
       
 
       
-        
-          
-          MySQL 5.7.xx ZIP版本配置方案MySQL 5.7.22 官方下载地址MySQL 官方配置参数查询
-一、下载 MySQL 5.7.xx zip 安装包本机以 Windows10 64 位系统为例进入 Oracel 官网，选择 MySQL Windows (x86, 64-bit), ZI
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2018/04/24/Windows 安装 MySQL 5.7/#more" rel="contents">
-              Read more &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
+        <h2 id="MySQL-5-7-xx-ZIP版本配置方案"><a href="#MySQL-5-7-xx-ZIP版本配置方案" class="headerlink" title="MySQL 5.7.xx ZIP版本配置方案"></a>MySQL 5.7.xx ZIP版本配置方案</h2><p>MySQL 5.7.22 官方<a href="https://dev.mysql.com/downloads/mysql/5.7.html#downloads" target="_blank" rel="noopener">下载地址</a><br><a href="http://dev.mysql.com/doc/refman/5.7/en/server-system-variables.html" target="_blank" rel="noopener">MySQL 官方配置参数查询</a></p>
+<h2 id="一、下载-MySQL-5-7-xx-zip-安装包"><a href="#一、下载-MySQL-5-7-xx-zip-安装包" class="headerlink" title="一、下载 MySQL 5.7.xx zip 安装包"></a><strong>一、下载 MySQL 5.7.xx zip 安装包</strong></h2><p>本机以 Windows10 64 位系统为例<br>进入 Oracel 官网，选择 MySQL Windows (x86, 64-bit), ZIP Archive 下载包<br><a href="http://dev.mysql.com/downloads/mysql/" target="_blank" rel="noopener">点此下载</a>  </p>
+<hr>
+<h2 id="二、解压安装包"><a href="#二、解压安装包" class="headerlink" title="二、解压安装包"></a><strong>二、解压安装包</strong></h2><p>将MySQL数据库解压至目录 <strong>D:\Program Files\MySQL\mysql-5.7.xx-winx64</strong><br>将 <strong>D:\Program Files\MySQL\mysql-5.7.xx-winx64\bin</strong> 添加至环境变量 <strong>Path</strong> 中</p>
+<hr>
+<h2 id="三、创建一个空文件夹，命名为“data”，用来存放数据"><a href="#三、创建一个空文件夹，命名为“data”，用来存放数据" class="headerlink" title="三、创建一个空文件夹，命名为“data”，用来存放数据"></a><strong>三、创建一个空文件夹，命名为“data”，用来存放数据</strong></h2><p>本机创建在 D:\Program Files\MySQL\mysql-5.7.xx-winx64 目录下，所以最后会看到<strong>D:\Program Files\MySQL\mysql-5.7.xx-winx64\data</strong>，此文件夹后面会有用到  </p>
+<hr>
+<h2 id="四、配置启动配置文件"><a href="#四、配置启动配置文件" class="headerlink" title="四、配置启动配置文件"></a><strong>四、配置启动配置文件</strong></h2><p>把 D:\Program Files\MySQL\mysql-5.7.xx-winx64\my-default.ini 文件复制一份，重新命名为 <strong>my.ini</strong>，修改里面的几个参数， 配置文件如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br></pre></td><td class="code"><pre><span class="line"># For advice on how to change settings please see</span><br><span class="line"># http://dev.mysql.com/doc/refman/5.7/en/server-configuration-defaults.html</span><br><span class="line"># *** DO NOT EDIT THIS FILE. It&apos;s a template which will be copied to the</span><br><span class="line"># *** default location during install, and will be replaced if you</span><br><span class="line"># *** upgrade to a newer version of MySQL.</span><br><span class="line"></span><br><span class="line">[client]</span><br><span class="line">default-character-set=utf8</span><br><span class="line"></span><br><span class="line">[mysql]</span><br><span class="line">default-character-set=utf8</span><br><span class="line"></span><br><span class="line">[mysqld]</span><br><span class="line">character-set-server=utf8</span><br><span class="line"></span><br><span class="line"># Remove leading # and set to the amount of RAM for the most important data</span><br><span class="line"># cache in MySQL. Start at 70% of total RAM for dedicated server, else 10%.</span><br><span class="line"># innodb_buffer_pool_size = 128M</span><br><span class="line"></span><br><span class="line"># Remove leading # to turn on a very important data integrity option: logging</span><br><span class="line"># changes to the binary log between backups.</span><br><span class="line"># log_bin</span><br><span class="line"></span><br><span class="line"># These are commonly set, remove the # and set as required.</span><br><span class="line"># server_id = .....</span><br><span class="line"># MySQL 安装目录</span><br><span class="line">basedir = D:\Program Files\MySQL\mysql-5.7.22-winx64</span><br><span class="line"># MySQL 数据库数据存放目录</span><br><span class="line">datadir = D:\Program Files\MySQL\mysql-5.7.22-winx64\data</span><br><span class="line"># MySQL 端口</span><br><span class="line">port = 3306</span><br><span class="line"># 允许最大连接数，默认200</span><br><span class="line">max_connections=200</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"># Remove leading # to set options mainly useful for reporting servers.</span><br><span class="line"># The server defaults are faster for transactions and fast SELECTs.</span><br><span class="line"># Adjust sizes as needed, experiment to find the optimal values.</span><br><span class="line"># join_buffer_size = 128M</span><br><span class="line"># sort_buffer_size = 2M</span><br><span class="line"># read_rnd_buffer_size = 2M</span><br><span class="line"></span><br><span class="line">sql_mode=NO_ENGINE_SUBSTITUTION,STRICT_TRANS_TABLES</span><br><span class="line"></span><br><span class="line"># 创建新表时将使用的默认存储引擎</span><br><span class="line">default-storage-engine=INNODB</span><br><span class="line"></span><br><span class="line"># explicit_defaults_for_timestamp=true</span><br></pre></td></tr></table></figure>
+<h2 id="五、初始化数据目录"><a href="#五、初始化数据目录" class="headerlink" title="五、初始化数据目录"></a><strong>五、初始化数据目录</strong></h2><ul>
+<li><strong>管理员身份</strong>打开 CMD;  </li>
+<li>当前路径定位到 <strong>D:\Program Files\MySQL\mysql-5.7.xx-winx64\bin</strong>  </li>
+<li>按照mysql官方文档给出的步骤还有一步 Selecting a MySQL Server Type，就是选择用 mysqld 还是 mysqld-debug.</li>
+</ul>
+<p>一般使用如下命令：</p>
+<blockquote>
+<p>mysqld –defaults-file=”D:\Program Files\MySQL\mysql-5.7.xx-winx64\my.ini” –initialize-insecure</p>
+</blockquote>
+<p>注：  </p>
+<ul>
+<li>这个命令很重要，它会初始化 data 目录，在执行此命令前请先把 data 目录下的所有文件先删除，否则会失败；</li>
+<li>可以选择用 –initialize-insecure 或者 –initialize 来初始化，–initialize-insecure 初始化 root 密码为空，如果用 –initialize 来初始化，会产生一个随机密码；</li>
+<li>执行成功后你会在 data 目录 下看到 mysql，perofrmance_schema，sys 目录，同时还会有一些文件。</li>
+</ul>
+<hr>
+<h2 id="六、安装-mysql-服务"><a href="#六、安装-mysql-服务" class="headerlink" title="六、安装 mysql 服务"></a><strong>六、安装 mysql 服务</strong></h2><blockquote>
+<p>mysqld -install<br>mysqld -remove （出问题重新配置前需要卸载服务）</p>
+</blockquote>
+<hr>
+<h2 id="七、启动-mysql-服务、添加初始密码"><a href="#七、启动-mysql-服务、添加初始密码" class="headerlink" title="七、启动 mysql 服务、添加初始密码"></a><strong>七、启动 mysql 服务、添加初始密码</strong></h2><blockquote>
+<p>net start mysql<br>mysqladmin -u root password 123456<br>mysql -u root -p  </p>
+</blockquote>
+<hr>
+<h2 id="八、设置默认编码"><a href="#八、设置默认编码" class="headerlink" title="八、设置默认编码"></a><strong>八、设置默认编码</strong></h2><p>先确保my.ini添加以下代码<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">[client]</span><br><span class="line">default-character-set=utf8</span><br><span class="line"></span><br><span class="line">[mysql]</span><br><span class="line">default-character-set=utf8</span><br><span class="line"></span><br><span class="line">[mysqld]</span><br><span class="line">default-character-set=utf8  或者  character-set-server=utf8</span><br></pre></td></tr></table></figure></p>
+<p>通过命令查看数据库当前编码</p>
+<blockquote>
+<p>mysql -u root -p<br>show variables like ‘character%’;</p>
+</blockquote>
+<p>如果不是以下编码，则设置编码<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">+--------------------------+------------------------------------------------------------+</span><br><span class="line">| Variable_name            | Value                                                      |</span><br><span class="line">+--------------------------+------------------------------------------------------------+</span><br><span class="line">| character_set_client     | utf8                                                       |</span><br><span class="line">| character_set_connection | utf8                                                       |</span><br><span class="line">| character_set_database   | utf8                                                       |</span><br><span class="line">| character_set_filesystem | binary                                                     |</span><br><span class="line">| character_set_results    | utf8                                                       |</span><br><span class="line">| character_set_server     | utf8                                                       |</span><br><span class="line">| character_set_system     | utf8                                                       |</span><br><span class="line">| character_sets_dir       | D:\Program Files\MySQL\mysql-5.7.22-winx64\share\charsets\ |</span><br><span class="line">+--------------------------+------------------------------------------------------------+</span><br><span class="line">8 rows in set, 1 warning (0.00 sec)</span><br></pre></td></tr></table></figure></p>
+<p>设置编码：  </p>
+<blockquote>
+<p>SET character_set_client = utf8;<br>SET character_set_connection = utf8;<br>SET character_set_database = utf8;<br>SET character_set_results = utf8;<br>SET character_set_server = utf8;  </p>
+</blockquote>
+<ul>
+<li>character_set_client为客户端编码方式；  </li>
+<li>character_set_connection为建立连接使用的编码；  </li>
+<li>character_set_database数据库的编码；  </li>
+<li>character_set_results结果集的编码；  </li>
+<li>character_set_server数据库服务器的编码；  </li>
+</ul>
+<hr>
+<h2 id="九、mysql-开启远程连接"><a href="#九、mysql-开启远程连接" class="headerlink" title="九、mysql 开启远程连接"></a><strong>九、mysql 开启远程连接</strong></h2><blockquote>
+<p>grant all privileges on *.* to ‘root‘@’%’ identified by ‘123456’ with grant option;</p>
+</blockquote>
+<p>后记：<br>如果中途有什么步骤失败，一定要执行 mysql 移除命令，然后删除 data 目录下的所有文件，然后删除服务 mysqld -remove<br>特别提醒：5.7 和 5.6 不太相同，要自己初始化数据 data 目录，不然启动不会成功</p>
+<hr>
+<h2 id="十、后记"><a href="#十、后记" class="headerlink" title="十、后记"></a><strong>十、后记</strong></h2><p>mysql 安装完后可能会用到的语句<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">alter user &apos;root&apos;@&apos;localhost&apos; identified by &apos;123&apos;;</span><br><span class="line">create database victor;</span><br><span class="line">create user &apos;victor&apos;@&apos;localhost&apos; identified by &apos;victor@123&apos;;</span><br><span class="line">flush privileges;</span><br><span class="line">creaet user &apos;victorremote&apos;@&apos;%&apos; identified by &apos;victorremote@123&apos;;</span><br><span class="line">flush privileges;</span><br><span class="line">grant all on victor.* to &apos;victor&apos;@&apos;localhost&apos; identified by &apos;victor@123&apos;;</span><br><span class="line">flush privileges;</span><br><span class="line">grant all on victor.* to &apos;victorremote&apos;@&apos;%&apos; identified by &apos;victorremote@123&apos;;</span><br><span class="line">flush privileges;</span><br><span class="line"></span><br><span class="line">################################</span><br><span class="line">#连接最大空闲时长</span><br><span class="line">SHOW GLOBAL VARIABLES LIKE &apos;wait_timeout&apos;;</span><br><span class="line">#最大连接数</span><br><span class="line">SHOW VARIABLES LIKE &apos;%max_connections%&apos;;</span><br><span class="line">SET GLOBAL max_connections = 200;</span><br><span class="line">#字符编码</span><br><span class="line">SHOW VARIABLES WHERE Variable_name LIKE &apos;character\_set\_%&apos; OR Variable_name LIKE &apos;collation%&apos;;</span><br><span class="line">SHOW GLOBAL STATUS LIKE &apos;innodb_buffer_pool_pages_%&apos;;</span><br><span class="line">SHOW PROCESSLIST;</span><br><span class="line">SHOW STATUS LIKE &apos;Table%&apos;;</span><br><span class="line">SHOW STATUS LIKE &apos;%lock%&apos;;</span><br><span class="line">################################</span><br></pre></td></tr></table></figure></p>
+
       
     </div>
     
@@ -554,19 +448,72 @@ wget https://dev.mysql.com/get/Downloads/MySQL-5.7/mysql-5.7.22-linu
     
 
     
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div>If these articles are helpful to you, you can donate comment here.</div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>Donate</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="/uploads/wechatpay.jpg" alt="Leaves WeChat Pay"/>
+        <p>WeChat Pay</p>
+      </div>
+    
+
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="/uploads/alipay.jpg" alt="Leaves Alipay"/>
+        <p>Alipay</p>
+      </div>
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
 
     
 
     <footer class="post-footer">
       
-
+        <div class="post-tags">
+          
+            <a href="/tags/mysql/" rel="tag"># mysql</a>
+          
+            <a href="/tags/windows/" rel="tag"># windows</a>
+          
+        </div>
       
 
       
+      
+      
 
       
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/07/18/Linux 安装  MySQL 5.7 /" rel="prev" title="Linux 安装 MySQL 5.7">
+                Linux 安装 MySQL 5.7 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
       
-        <div class="post-eof"></div>
+
+      
       
     </footer>
   </div>
@@ -576,10 +523,11 @@ wget https://dev.mysql.com/get/Downloads/MySQL-5.7/mysql-5.7.22-linu
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -587,6 +535,15 @@ wget https://dev.mysql.com/get/Downloads/MySQL-5.7/mysql-5.7.22-linu
 
 
           
+
+  
+    <div class="comments" id="comments">
+      <div id="lv-container" data-id="city" data-uid="MTAyMC8zODIxMy8xNDc0MQ=="></div>
+    </div>
+
+  
+
+
 
         </div>
         
@@ -609,8 +566,17 @@ wget https://dev.mysql.com/get/Downloads/MySQL-5.7/mysql-5.7.22-linu
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -690,6 +656,22 @@ wget https://dev.mysql.com/get/Downloads/MySQL-5.7/mysql-5.7.22-linu
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#MySQL-5-7-xx-ZIP版本配置方案"><span class="nav-number">1.</span> <span class="nav-text">MySQL 5.7.xx ZIP版本配置方案</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#一、下载-MySQL-5-7-xx-zip-安装包"><span class="nav-number">2.</span> <span class="nav-text">一、下载 MySQL 5.7.xx zip 安装包</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#二、解压安装包"><span class="nav-number">3.</span> <span class="nav-text">二、解压安装包</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#三、创建一个空文件夹，命名为“data”，用来存放数据"><span class="nav-number">4.</span> <span class="nav-text">三、创建一个空文件夹，命名为“data”，用来存放数据</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#四、配置启动配置文件"><span class="nav-number">5.</span> <span class="nav-text">四、配置启动配置文件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#五、初始化数据目录"><span class="nav-number">6.</span> <span class="nav-text">五、初始化数据目录</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#六、安装-mysql-服务"><span class="nav-number">7.</span> <span class="nav-text">六、安装 mysql 服务</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#七、启动-mysql-服务、添加初始密码"><span class="nav-number">8.</span> <span class="nav-text">七、启动 mysql 服务、添加初始密码</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#八、设置默认编码"><span class="nav-number">9.</span> <span class="nav-text">八、设置默认编码</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#九、mysql-开启远程连接"><span class="nav-number">10.</span> <span class="nav-text">九、mysql 开启远程连接</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#十、后记"><span class="nav-number">11.</span> <span class="nav-text">十、后记</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -843,6 +825,10 @@ wget https://dev.mysql.com/get/Downloads/MySQL-5.7/mysql-5.7.22-linu
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
@@ -871,6 +857,17 @@ wget https://dev.mysql.com/get/Downloads/MySQL-5.7/mysql-5.7.22-linu
 
 
 
+  
+    <script type="text/javascript">
+      (function(d, s) {
+        var j, e = d.getElementsByTagName(s)[0];
+        if (typeof LivereTower === 'function') { return; }
+        j = d.createElement(s);
+        j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+        j.async = true;
+        e.parentNode.insertBefore(j, e);
+      })(document, 'script');
+    </script>
   
 
 
