@@ -87,7 +87,7 @@
 <meta property="og:site_name" content="Notes For Leaves">
 <meta property="og:description" content="MySQL 5.7.22 官方下载地址 清理 MySQL、下载解压清理    find / -name mysql | xargs rm -rf    下载    wget https://dev.mysql.com/get/Downloads/MySQL-5.7/mysql-5.7.22-linux-glibc2.12-x86_64.tar.gz  解压    tar -zxvf mysql-5">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2018-07-20T09:21:55.086Z">
+<meta property="og:updated_time" content="2018-07-21T15:17:00.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Linux 安装 MySQL 5.7">
 <meta name="twitter:description" content="MySQL 5.7.22 官方下载地址 清理 MySQL、下载解压清理    find / -name mysql | xargs rm -rf    下载    wget https://dev.mysql.com/get/Downloads/MySQL-5.7/mysql-5.7.22-linux-glibc2.12-x86_64.tar.gz  解压    tar -zxvf mysql-5">
@@ -396,11 +396,7 @@
 </blockquote>
 <p>重命名    </p>
 <blockquote>
-<p>mv mysql-5.7.22-linux-glibc2.12-x86_64 mysql</p>
-</blockquote>
-<p>授权</p>
-<blockquote>
-<p>chown -R mysql mysql<br>chgrp -R mysql mysql  </p>
+<p>mv mysql-5.7.22-linux-glibc2.12-x86_64 mysql </p>
 </blockquote>
 <hr>
 <h2 id="创建-MySQL-组、用户"><a href="#创建-MySQL-组、用户" class="headerlink" title="创建 MySQL 组、用户"></a>创建 MySQL 组、用户</h2><p>查看有没有mysql组  </p>
@@ -415,7 +411,7 @@
 <blockquote>
 <p>groupadd mysql<br>useradd -r -g mysql mysql  </p>
 </blockquote>
-<p>更改mysql目录下所有的目录及文件夹所属组合用户</p>
+<p>更改 mysql 目录下所有的目录及文件夹所属组合用户</p>
 <blockquote>
 <p>chown -R mysql mysql<br>chgrp -R mysql mysql<br>cd mysql<br>ls -l<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">drwxr-xr-x.  2 mysql mysql  4096 7月  18 15:04 bin</span><br><span class="line">-rw-r--r--.  1 mysql mysql 17987 3月   4 21:40 COPYING</span><br><span class="line">drwxr-xr-x.  2 mysql mysql    52 7月  18 15:04 docs</span><br><span class="line">drwxr-xr-x.  3 mysql mysql  4096 7月  18 15:04 include</span><br><span class="line">drwxr-xr-x.  5 mysql mysql  4096 7月  18 15:04 lib</span><br><span class="line">drwxr-xr-x.  4 mysql mysql    28 7月  18 15:04 man</span><br><span class="line">-rw-r--r--.  1 mysql mysql  2478 3月   4 21:40 README</span><br><span class="line">drwxr-xr-x. 28 mysql mysql  4096 7月  18 15:04 share</span><br><span class="line">drwxr-xr-x.  2 mysql mysql    86 7月  18 15:08 support-files</span><br></pre></td></tr></table></figure></p>
 </blockquote>
