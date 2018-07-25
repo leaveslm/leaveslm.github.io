@@ -8,8 +8,8 @@
         <category>基础服务</category>
       </categories>
       <tags>
-        <tag>linux</tag>
         <tag>redis</tag>
+        <tag>linux</tag>
       </tags>
   </entry>
   <entry>
@@ -43,8 +43,8 @@
         <category>基础服务</category>
       </categories>
       <tags>
-        <tag>windows</tag>
         <tag>mysql</tag>
+        <tag>windows</tag>
       </tags>
   </entry>
   <entry>
