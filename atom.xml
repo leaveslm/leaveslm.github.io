@@ -73,31 +73,6 @@
   </entry>
   
   <entry>
-    <title>Windows 10 修改控制台字体</title>
-    <link href="http://leaveslm.github.io/2018/05/07/2018-2018-05-07-Windows-10-%E4%BF%AE%E6%94%B9%E6%8E%A7%E5%88%B6%E5%8F%B0%E5%AD%97%E4%BD%93/"/>
-    <id>http://leaveslm.github.io/2018/05/07/2018-2018-05-07-Windows-10-修改控制台字体/</id>
-    <published>2018-05-06T16:12:43.000Z</published>
-    <updated>2018-07-23T08:27:59.527Z</updated>
-    
-    <content type="html"><![CDATA[<p>用过 Mac、Linux 的用户都会觉得这两个系统的 Terminal 字体相比 Windows 的看起来舒服很多，其实 Windows 控制台字体也是可以更改的，比如更改成等宽字体，下面的是更改方法，可以参考。控制台背景改成白色，字体改成黑色显示效果更佳。<br>推荐一款字体：Menlo<br>字体下载：<a href="/downloads/Menlo.zip">点击下载</a>  </p><h2 id="Win-R-regedit，打开注册表编辑器"><a href="#Win-R-regedit，打开注册表编辑器" class="headerlink" title="Win+R: regedit，打开注册表编辑器"></a>Win+R: regedit，打开注册表编辑器</h2><h2 id="添加字体"><a href="#添加字体" class="headerlink" title="添加字体"></a>添加字体</h2><p>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Console\TrueTypeFont]<br>添加字符串值: “000” -&gt; Menlo (自选字体)  </p><h2 id="修改字符编码"><a href="#修改字符编码" class="headerlink" title="修改字符编码"></a>修改字符编码</h2><p>[HKEY_CURRENT_USER\Console\%SystemRoot%_system32_cmd.exe]<br>修改 “CodePage”=REG_DWORD: 0x0000fde9 (65001)<br>添加(可选) “FaceName”=REG_SZ: Menlo  </p><p>【注】十六进制”000003a8”或十进制”936”，表示“936 (ANSI/OEM - 简体中文 GBK)”</p><p>————————————– END ————————————–</p><h2 id="附-chcp详解"><a href="#附-chcp详解" class="headerlink" title="附: chcp详解"></a>附: chcp详解</h2><h3 id="功能说明"><a href="#功能说明" class="headerlink" title="功能说明"></a>功能说明</h3><p>显示活动控制台代码页数量，或更改该控制台的活动控制台代码页。如果在没有参数的情况下使用，则 chcp 显示活动控制台代码页的数量。</p><h3 id="补充说明"><a href="#补充说明" class="headerlink" title="补充说明"></a>补充说明</h3><p>只有随 XOX 一起安装的原始设备制造商 (OEM) 代码页才能在使用 Raster 字体的命令提示符窗口中正常显示。其他代码页则可在全屏幕模式下或者在使用 TrueType 字体的命令提示符窗口中正确显示。 就像在 MS-DOS 中一样，您不必准备代码页。 在指派了新代码页之后启动的程序将使用该新代码页，但如果程序（除了 Cmd.exe）是在指派新代码页之前启动的，那么该程序将使用原来的代码页。</p><p>语法<br>chcp [NNN] </p><p>参数<br>NNN 指定代码页。下表列出了MSDOS所有支持的代码页及其国家（地区）或者语言：<br>代码页        国家（地区）或语言<br>437          美国<br>850          多语言（拉丁文 I）<br>852          斯拉夫语（拉丁文 II）<br>855          西里尔文（俄语）<br>857          土耳其语<br>860          葡萄牙语<br>861          冰岛语<br>863          加拿大 - 法语<br>865          日耳曼语<br>866          俄语<br>869          现代希腊语<br>936          简体中文<br>950          繁体中文<br>65001        UTF-8  </p><p>/? 在命令提示符下显示帮助。</p><p>示例：  </p><p>要查看活动代码页设置，请键入：chcp  </p><p>出现类似于下面内容的消息：活动代码页：437  </p><p>如果要将活动代码页更改为 850（多语言），请键入：chcp 850  </p><p>如果指定的代码页无效，则会显示以下错误消息：无效代码页  </p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;用过 Mac、Linux 的用户都会觉得这两个系统的 Terminal 字体相比 Windows 的看起来舒服很多，其实 Windows 控制台字体也是可以更改的，比如更改成等宽字体，下面的是更改方法，可以参考。控制台背景改成白色，字体改成黑色显示效果更佳。&lt;br&gt;推荐一款
-      
-    
-    </summary>
-    
-      <category term="DIY" scheme="http://leaveslm.github.io/categories/DIY/"/>
-    
-    
-      <category term="windows" scheme="http://leaveslm.github.io/tags/windows/"/>
-    
-  </entry>
-  
-  <entry>
     <title>Windows 安装 MySQL 5.7</title>
     <link href="http://leaveslm.github.io/2018/04/24/2018-2018-04-24-Windows-%E5%AE%89%E8%A3%85-MySQL-5-7/"/>
     <id>http://leaveslm.github.io/2018/04/24/2018-2018-04-24-Windows-安装-MySQL-5-7/</id>
@@ -118,9 +93,9 @@
       <category term="基础服务" scheme="http://leaveslm.github.io/categories/%E5%9F%BA%E7%A1%80%E6%9C%8D%E5%8A%A1/"/>
     
     
-      <category term="mysql" scheme="http://leaveslm.github.io/tags/mysql/"/>
-    
       <category term="windows" scheme="http://leaveslm.github.io/tags/windows/"/>
+    
+      <category term="mysql" scheme="http://leaveslm.github.io/tags/mysql/"/>
     
   </entry>
   
@@ -148,6 +123,31 @@
       <category term="地图" scheme="http://leaveslm.github.io/tags/%E5%9C%B0%E5%9B%BE/"/>
     
       <category term="GPS" scheme="http://leaveslm.github.io/tags/GPS/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Windows 10 修改控制台字体</title>
+    <link href="http://leaveslm.github.io/2017/05/07/2017-2017-05-07-Windows-10-%E4%BF%AE%E6%94%B9%E6%8E%A7%E5%88%B6%E5%8F%B0%E5%AD%97%E4%BD%93/"/>
+    <id>http://leaveslm.github.io/2017/05/07/2017-2017-05-07-Windows-10-修改控制台字体/</id>
+    <published>2017-05-06T16:12:43.000Z</published>
+    <updated>2018-07-25T09:51:29.748Z</updated>
+    
+    <content type="html"><![CDATA[<p>用过 Mac、Linux 的用户都会觉得这两个系统的 Terminal 字体相比 Windows 的看起来舒服很多，其实 Windows 控制台字体也是可以更改的，比如更改成等宽字体，下面的是更改方法，可以参考。控制台背景改成白色，字体改成黑色显示效果更佳。<br>推荐一款字体：Menlo<br>字体下载：<a href="/downloads/Menlo.zip">点击下载</a>  </p><h2 id="Win-R-regedit，打开注册表编辑器"><a href="#Win-R-regedit，打开注册表编辑器" class="headerlink" title="Win+R: regedit，打开注册表编辑器"></a>Win+R: regedit，打开注册表编辑器</h2><h2 id="添加字体"><a href="#添加字体" class="headerlink" title="添加字体"></a>添加字体</h2><p>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Console\TrueTypeFont]<br>添加字符串值: “000” -&gt; Menlo (自选字体)  </p><h2 id="修改字符编码"><a href="#修改字符编码" class="headerlink" title="修改字符编码"></a>修改字符编码</h2><p>[HKEY_CURRENT_USER\Console\%SystemRoot%_system32_cmd.exe]<br>修改 “CodePage”=REG_DWORD: 0x0000fde9 (65001)<br>添加(可选) “FaceName”=REG_SZ: Menlo  </p><p>【注】十六进制”000003a8”或十进制”936”，表示“936 (ANSI/OEM - 简体中文 GBK)”</p><p>————————————– END ————————————–</p><h2 id="附-chcp详解"><a href="#附-chcp详解" class="headerlink" title="附: chcp详解"></a>附: chcp详解</h2><h3 id="功能说明"><a href="#功能说明" class="headerlink" title="功能说明"></a>功能说明</h3><p>显示活动控制台代码页数量，或更改该控制台的活动控制台代码页。如果在没有参数的情况下使用，则 chcp 显示活动控制台代码页的数量。</p><h3 id="补充说明"><a href="#补充说明" class="headerlink" title="补充说明"></a>补充说明</h3><p>只有随 XOX 一起安装的原始设备制造商 (OEM) 代码页才能在使用 Raster 字体的命令提示符窗口中正常显示。其他代码页则可在全屏幕模式下或者在使用 TrueType 字体的命令提示符窗口中正确显示。 就像在 MS-DOS 中一样，您不必准备代码页。 在指派了新代码页之后启动的程序将使用该新代码页，但如果程序（除了 Cmd.exe）是在指派新代码页之前启动的，那么该程序将使用原来的代码页。</p><p>语法<br>chcp [NNN] </p><p>参数<br>NNN 指定代码页。下表列出了MSDOS所有支持的代码页及其国家（地区）或者语言：<br>代码页        国家（地区）或语言<br>437          美国<br>850          多语言（拉丁文 I）<br>852          斯拉夫语（拉丁文 II）<br>855          西里尔文（俄语）<br>857          土耳其语<br>860          葡萄牙语<br>861          冰岛语<br>863          加拿大 - 法语<br>865          日耳曼语<br>866          俄语<br>869          现代希腊语<br>936          简体中文<br>950          繁体中文<br>65001        UTF-8  </p><p>/? 在命令提示符下显示帮助。</p><p>示例：  </p><p>要查看活动代码页设置，请键入：chcp  </p><p>出现类似于下面内容的消息：活动代码页：437  </p><p>如果要将活动代码页更改为 850（多语言），请键入：chcp 850  </p><p>如果指定的代码页无效，则会显示以下错误消息：无效代码页  </p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;用过 Mac、Linux 的用户都会觉得这两个系统的 Terminal 字体相比 Windows 的看起来舒服很多，其实 Windows 控制台字体也是可以更改的，比如更改成等宽字体，下面的是更改方法，可以参考。控制台背景改成白色，字体改成黑色显示效果更佳。&lt;br&gt;推荐一款
+      
+    
+    </summary>
+    
+      <category term="DIY" scheme="http://leaveslm.github.io/categories/DIY/"/>
+    
+    
+      <category term="windows" scheme="http://leaveslm.github.io/tags/windows/"/>
     
   </entry>
   
