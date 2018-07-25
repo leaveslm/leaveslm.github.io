@@ -118,9 +118,9 @@
       <category term="基础服务" scheme="http://leaveslm.github.io/categories/%E5%9F%BA%E7%A1%80%E6%9C%8D%E5%8A%A1/"/>
     
     
-      <category term="mysql" scheme="http://leaveslm.github.io/tags/mysql/"/>
-    
       <category term="windows" scheme="http://leaveslm.github.io/tags/windows/"/>
+    
+      <category term="mysql" scheme="http://leaveslm.github.io/tags/mysql/"/>
     
   </entry>
   
