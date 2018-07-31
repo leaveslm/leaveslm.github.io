@@ -70,7 +70,7 @@
 
 
 
-  <meta name="keywords" content="mysql,linux," />
+  <meta name="keywords" content="java,spring boot," />
 
 
 
@@ -83,18 +83,22 @@
 
 
 
-<meta name="description" content="MySQL 5.7.22 官方下载地址 清理 MySQL、下载解压清理    find / -name mysql | xargs rm -rf    下载    wget https://dev.mysql.com/get/Downloads/MySQL-5.7/mysql-5.7.22-linux-glibc2.12-x86_64.tar.gz  解压    tar -zxvf mysql-5">
-<meta name="keywords" content="mysql,linux">
+<meta name="description" content="断点续传断点续传是在下载或上传时，将下载或上传任务（一个文件或一个压缩包）人为的划分为几个部分，每一个部分采用一个线程进行上传或下载，如果碰到网络故障，可以从已经上传或下载的部分开始继续上传下载未完成的部分，而没有必要从头开始上传下载。用户可以节省时间，提高速度。  关键点所谓断点续传，也就是要从文件已经下载的地方开始继续下载。客户端在 HTTP 请求中体现在：    Range: bytes=1">
+<meta name="keywords" content="java,spring boot">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Linux 安装 MySQL 5.7">
-<meta property="og:url" content="http://leaveslm.github.io/2018/07/18/2018-2018-07-18-Linux-安装-MySQL-5-7/index.html">
+<meta property="og:title" content="断点续传下载文件 多媒体在线播放">
+<meta property="og:url" content="http://leaveslm.github.io/2018/07/31/2018-2018-07-31-断点续传下载文件-多媒体在线播放/index.html">
 <meta property="og:site_name" content="Notes For Leaves">
-<meta property="og:description" content="MySQL 5.7.22 官方下载地址 清理 MySQL、下载解压清理    find / -name mysql | xargs rm -rf    下载    wget https://dev.mysql.com/get/Downloads/MySQL-5.7/mysql-5.7.22-linux-glibc2.12-x86_64.tar.gz  解压    tar -zxvf mysql-5">
+<meta property="og:description" content="断点续传断点续传是在下载或上传时，将下载或上传任务（一个文件或一个压缩包）人为的划分为几个部分，每一个部分采用一个线程进行上传或下载，如果碰到网络故障，可以从已经上传或下载的部分开始继续上传下载未完成的部分，而没有必要从头开始上传下载。用户可以节省时间，提高速度。  关键点所谓断点续传，也就是要从文件已经下载的地方开始继续下载。客户端在 HTTP 请求中体现在：    Range: bytes=1">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2018-07-21T15:17:00.000Z">
+<meta property="og:image" content="https://raw.githubusercontent.com/leaveslm/blog-image/master/blog/2018/20180731175155.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/leaveslm/blog-image/master/blog/2018/20180731171110.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/leaveslm/blog-image/master/blog/2018/20180731171111.png">
+<meta property="og:updated_time" content="2018-07-31T06:51:00.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Linux 安装 MySQL 5.7">
-<meta name="twitter:description" content="MySQL 5.7.22 官方下载地址 清理 MySQL、下载解压清理    find / -name mysql | xargs rm -rf    下载    wget https://dev.mysql.com/get/Downloads/MySQL-5.7/mysql-5.7.22-linux-glibc2.12-x86_64.tar.gz  解压    tar -zxvf mysql-5">
+<meta name="twitter:title" content="断点续传下载文件 多媒体在线播放">
+<meta name="twitter:description" content="断点续传断点续传是在下载或上传时，将下载或上传任务（一个文件或一个压缩包）人为的划分为几个部分，每一个部分采用一个线程进行上传或下载，如果碰到网络故障，可以从已经上传或下载的部分开始继续上传下载未完成的部分，而没有必要从头开始上传下载。用户可以节省时间，提高速度。  关键点所谓断点续传，也就是要从文件已经下载的地方开始继续下载。客户端在 HTTP 请求中体现在：    Range: bytes=1">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/leaveslm/blog-image/master/blog/2018/20180731175155.png">
 
 
 
@@ -124,13 +128,13 @@
 
 
 
-  <link rel="canonical" href="http://leaveslm.github.io/2018/07/18/2018-2018-07-18-Linux-安装-MySQL-5-7/"/>
+  <link rel="canonical" href="http://leaveslm.github.io/2018/07/31/2018-2018-07-31-断点续传下载文件-多媒体在线播放/"/>
 
 
 
 
 
-  <title>Linux 安装 MySQL 5.7 | Notes For Leaves</title>
+  <title>断点续传下载文件 多媒体在线播放 | Notes For Leaves</title>
   
 
 
@@ -291,7 +295,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://leaveslm.github.io/2018/07/18/2018-2018-07-18-Linux-安装-MySQL-5-7/">
+    <link itemprop="mainEntityOfPage" href="http://leaveslm.github.io/2018/07/31/2018-2018-07-31-断点续传下载文件-多媒体在线播放/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Leaves">
@@ -308,7 +312,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Linux 安装 MySQL 5.7</h1>
+          <h1 class="post-title" itemprop="name headline">断点续传下载文件 多媒体在线播放</h1>
         
 
         <div class="post-meta">
@@ -320,8 +324,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-07-18T17:05:28+08:00">
-                2018-07-18
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-07-31T16:08:26+08:00">
+                2018-07-31
               </time>
             
 
@@ -343,8 +347,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/基础服务/" itemprop="url" rel="index">
-                    <span itemprop="name">基础服务</span>
+                  <a href="/categories/代码/" itemprop="url" rel="index">
+                    <span itemprop="name">代码</span>
                   </a>
                 </span>
 
@@ -385,131 +389,23 @@
       
 
       
-        <p>MySQL 5.7.22 官方<a href="https://dev.mysql.com/downloads/mysql/5.7.html#downloads" target="_blank" rel="noopener">下载地址</a></p>
-<h2 id="清理-MySQL、下载解压"><a href="#清理-MySQL、下载解压" class="headerlink" title="清理 MySQL、下载解压"></a>清理 MySQL、下载解压</h2><p>清理  </p>
+        <h2 id="断点续传"><a href="#断点续传" class="headerlink" title="断点续传"></a>断点续传</h2><p>断点续传是在下载或上传时，将下载或上传任务（一个文件或一个压缩包）人为的划分为几个部分，每一个部分采用一个线程进行上传或下载，如果碰到网络故障，可以从已经上传或下载的部分开始继续上传下载未完成的部分，而没有必要从头开始上传下载。用户可以节省时间，提高速度。 </p>
+<h2 id="关键点"><a href="#关键点" class="headerlink" title="关键点"></a>关键点</h2><p>所谓断点续传，也就是要从文件已经下载的地方开始继续下载。<br>客户端在 HTTP 请求中体现在：  </p>
 <blockquote>
-<p>find / -name mysql | xargs rm -rf  </p>
+<p>Range: bytes=17563648-  </p>
 </blockquote>
-<p>下载  </p>
+<p>服务器收到这个请求以后，返回的信息如下：</p>
 <blockquote>
-<p>wget <a href="https://dev.mysql.com/get/Downloads/MySQL-5.7/mysql-5.7.22-linux-glibc2.12-x86_64.tar.gz" target="_blank" rel="noopener">https://dev.mysql.com/get/Downloads/MySQL-5.7/mysql-5.7.22-linux-glibc2.12-x86_64.tar.gz</a></p>
+<p>Accept-Ranges: bytes<br>Content-Range: bytes 17563648-36057953/36057954<br>Content-Length: 18494306  </p>
 </blockquote>
-<p>解压  </p>
-<blockquote>
-<p>tar -zxvf mysql-5.7.22-linux-glibc2.12-x86_64.tar.gz</p>
-</blockquote>
-<p>重命名    </p>
-<blockquote>
-<p>mv mysql-5.7.22-linux-glibc2.12-x86_64 mysql </p>
-</blockquote>
-<hr>
-<h2 id="创建-MySQL-组、用户"><a href="#创建-MySQL-组、用户" class="headerlink" title="创建 MySQL 组、用户"></a>创建 MySQL 组、用户</h2><p>查看有没有mysql组  </p>
-<blockquote>
-<p>cat /etc/group | grep mysql  </p>
-</blockquote>
-<p>查看有没有mysql用户</p>
-<blockquote>
-<p>cat /etc/passwd |grep mysql  </p>
-</blockquote>
-<p>没有则创建 </p>
-<blockquote>
-<p>groupadd mysql<br>useradd -r -g mysql mysql  </p>
-</blockquote>
-<p>更改 mysql 目录下所有的目录及文件夹所属组合用户</p>
-<blockquote>
-<p>chown -R mysql mysql<br>chgrp -R mysql mysql<br>cd mysql<br>ls -l<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">drwxr-xr-x.  2 mysql mysql  4096 7月  18 15:04 bin</span><br><span class="line">-rw-r--r--.  1 mysql mysql 17987 3月   4 21:40 COPYING</span><br><span class="line">drwxr-xr-x.  2 mysql mysql    52 7月  18 15:04 docs</span><br><span class="line">drwxr-xr-x.  3 mysql mysql  4096 7月  18 15:04 include</span><br><span class="line">drwxr-xr-x.  5 mysql mysql  4096 7月  18 15:04 lib</span><br><span class="line">drwxr-xr-x.  4 mysql mysql    28 7月  18 15:04 man</span><br><span class="line">-rw-r--r--.  1 mysql mysql  2478 3月   4 21:40 README</span><br><span class="line">drwxr-xr-x. 28 mysql mysql  4096 7月  18 15:04 share</span><br><span class="line">drwxr-xr-x.  2 mysql mysql    86 7月  18 15:08 support-files</span><br></pre></td></tr></table></figure></p>
-</blockquote>
-<hr>
-<h2 id="修改-my-cnf-配置文件"><a href="#修改-my-cnf-配置文件" class="headerlink" title="修改 my.cnf 配置文件"></a>修改 my.cnf 配置文件</h2><p>从 5.7.18 开始不在二进制包中提供 my-default.cnf 文件</p>
-<blockquote>
-<p>vi /etc/my.cnf</p>
-</blockquote>
-<p>my-default.cnf<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line"># For advice on how to change settings please see</span><br><span class="line">#  </span><br><span class="line"># *** DO NOT EDIT THIS FILE. It‘s a template which will be copied to the</span><br><span class="line"># *** default location during install, and will be replaced if you</span><br><span class="line"># *** upgrade to a newer version of MySQL.</span><br><span class="line"></span><br><span class="line">[mysqld]</span><br><span class="line"></span><br><span class="line"># Remove leading # and set to the amount of RAM for the most important data</span><br><span class="line"># cache in MySQL. Start at 70% of total RAM for dedicated server, else 10%.</span><br><span class="line"># innodb_buffer_pool_size = 128M</span><br><span class="line"></span><br><span class="line"># Remove leading # to turn on a very important data integrity option: logging</span><br><span class="line"># changes to the binary log between backups.</span><br><span class="line"># log_bin</span><br><span class="line"></span><br><span class="line"># These are commonly set, remove the # and set as required.</span><br><span class="line"># basedir = .....</span><br><span class="line"># datadir = .....</span><br><span class="line"># port = .....</span><br><span class="line"># server_id = .....</span><br><span class="line"># socket = .....</span><br><span class="line"></span><br><span class="line"># Remove leading # to set options mainly useful for reporting servers.</span><br><span class="line"># The server defaults are faster for transactions and fast SELECTs.</span><br><span class="line"># Adjust sizes as needed, experiment to find the optimal values.</span><br><span class="line"># join_buffer_size = 128M</span><br><span class="line"># sort_buffer_size = 2M</span><br><span class="line"># read_rnd_buffer_size = 2M </span><br><span class="line"></span><br><span class="line">sql_mode=NO_ENGINE_SUBSTITUTION,STRICT_TRANS_TABLES</span><br></pre></td></tr></table></figure></p>
-<p>my.cnf<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br></pre></td><td class="code"><pre><span class="line"># For advice on how to change settings please see</span><br><span class="line">#  </span><br><span class="line"># *** DO NOT EDIT THIS FILE. It‘s a template which will be copied to the</span><br><span class="line"># *** default location during install, and will be replaced if you</span><br><span class="line"># *** upgrade to a newer version of MySQL.</span><br><span class="line"></span><br><span class="line">[client]</span><br><span class="line">default-character-set = utf8</span><br><span class="line"></span><br><span class="line">[mysql]</span><br><span class="line">default-character-set = utf8</span><br><span class="line">socket = /var/lib/mysql/mysql.sock</span><br><span class="line"></span><br><span class="line">[mysqld]</span><br><span class="line">character-set-server = utf8</span><br><span class="line"></span><br><span class="line"># Remove leading # and set to the amount of RAM for the most important data</span><br><span class="line"># cache in MySQL. Start at 70% of total RAM for dedicated server, else 10%.</span><br><span class="line"># innodb_buffer_pool_size = 128M</span><br><span class="line"></span><br><span class="line"># Remove leading # to turn on a very important data integrity option: logging</span><br><span class="line"># changes to the binary log between backups.</span><br><span class="line"># log_bin</span><br><span class="line"></span><br><span class="line"># These are commonly set, remove the # and set as required.</span><br><span class="line">basedir = /usr/local/mysql/</span><br><span class="line">datadir = /usr/local/mysql/data/</span><br><span class="line">port = 3306</span><br><span class="line">#server_id = </span><br><span class="line">socket = /var/lib/mysql/mysql.sock</span><br><span class="line"></span><br><span class="line"># Remove leading # to set options mainly useful for reporting servers.</span><br><span class="line"># The server defaults are faster for transactions and fast SELECTs.</span><br><span class="line"># Adjust sizes as needed, experiment to find the optimal values.</span><br><span class="line"># join_buffer_size = 128M</span><br><span class="line"># sort_buffer_size = 2M</span><br><span class="line"># read_rnd_buffer_size = 2M</span><br><span class="line">max_connections = 1000</span><br><span class="line"></span><br><span class="line">sql_mode=NO_ENGINE_SUBSTITUTION,STRICT_TRANS_TABLES</span><br></pre></td></tr></table></figure></p>
-<hr>
-<h2 id="初始化-MySQL-数据库"><a href="#初始化-MySQL-数据库" class="headerlink" title="初始化 MySQL 数据库"></a>初始化 MySQL 数据库</h2><p>初始化</p>
-<blockquote>
-<p>cd /usr/local/mysql<br>./bin/mysqld –user=mysql –basedir=/usr/local/mysql –datadir=/usr/local/mysql/data –initialize   </p>
-</blockquote>
-<p>输出如下：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">2018-07-18T07:06:49.223422Z 0 [Warning] TIMESTAMP with implicit DEFAULT value is deprecated. Please use --explicit_defaults_for_timestamp server option (see documentation for more details).</span><br><span class="line">2018-07-18T07:06:49.223579Z 0 [Warning] &apos;NO_ZERO_DATE&apos;, &apos;NO_ZERO_IN_DATE&apos; and &apos;ERROR_FOR_DIVISION_BY_ZERO&apos; sql modes should be used with strict mode. They will be merged with strict mode in a future release.</span><br><span class="line">2018-07-18T07:06:49.223591Z 0 [Warning] &apos;NO_AUTO_CREATE_USER&apos; sql mode was not set.</span><br><span class="line">2018-07-18T07:06:50.630648Z 0 [Warning] InnoDB: New log files created, LSN=45790</span><br><span class="line">2018-07-18T07:06:51.000475Z 0 [Warning] InnoDB: Creating foreign key constraint system tables.</span><br><span class="line">2018-07-18T07:06:51.028751Z 0 [Warning] No existing UUID has been found, so we assume that this is the first time that this server has been started. Generating a new UUID: 24e198b5-8a59-11e8-9a33-aeceb5cf96b1.</span><br><span class="line">2018-07-18T07:06:51.031122Z 0 [Warning] Gtid table is not ready to be used. Table &apos;mysql.gtid_executed&apos; cannot be opened.</span><br><span class="line">2018-07-18T07:06:51.045661Z 1 [Note] A temporary password is generated for root@localhost: Ra%p1C(&gt;7J(p</span><br></pre></td></tr></table></figure></p>
-<p>添加 RSA Key </p>
-<blockquote>
-<p>cd /usr/local/mysql<br>bin/mysql_ssl_rsa_setup  –datadir=/usr/local/mysql/data<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">Generating a 2048 bit RSA private key</span><br><span class="line">..+++</span><br><span class="line">.......................................................+++</span><br><span class="line">writing new private key to &apos;ca-key.pem&apos;</span><br><span class="line">-----</span><br><span class="line">Generating a 2048 bit RSA private key</span><br><span class="line">....................................................................+++</span><br><span class="line">...........................................................+++</span><br><span class="line">writing new private key to &apos;server-key.pem&apos;</span><br><span class="line">-----</span><br><span class="line">Generating a 2048 bit RSA private key</span><br><span class="line">..............................................................................................................................................+++</span><br><span class="line">..................................+++</span><br><span class="line">writing new private key to &apos;client-key.pem&apos;</span><br><span class="line">-----</span><br></pre></td></tr></table></figure></p>
-</blockquote>
-<p>编辑 /usr/local/mysql/support-files/mysql.server 文件</p>
-<blockquote>
-<p>vi /usr/local/mysql/support-files/mysql.server<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">...</span><br><span class="line">修改 basedir = /usr/local/mysql/</span><br><span class="line">修改 datadir = /usr/local/mysql/data/</span><br><span class="line">...</span><br></pre></td></tr></table></figure></p>
-</blockquote>
-<hr>
-<h2 id="启动-MySQL-服务"><a href="#启动-MySQL-服务" class="headerlink" title="启动 MySQL 服务"></a>启动 MySQL 服务</h2><blockquote>
-<p>cd /usr/local/mysql<br>./support-files/mysql.server start  </p>
-</blockquote>
-<p>注意：如果遇到以下问题，执行以下操作<br>Starting MySQL.Logging to ‘/usr/local/mysql/data/localhost.localdomain.err’.<br>2018-07-18T07:08:26.909710Z mysqld_safe Directory ‘/var/lib/mysql’ for UNIX socket file don’t exists. </p>
-<blockquote>
-<p>mkdir /var/lib/mysql<br>chown mysql:mysql /var/lib/mysql<br>cd /usr/local/mysql<br>./support-files/mysql.server start  </p>
-</blockquote>
-<p>Starting MySQL… SUCCESS!  </p>
-<blockquote>
-<p>./support-files/mysql.server stop  </p>
-</blockquote>
-<p>Shutting down MySQL… SUCCESS!  </p>
-<blockquote>
-<p>./support-files/mysql.server restart  </p>
-</blockquote>
-<p>Shutting down MySQL… SUCCESS!<br>Starting MySQL… SUCCESS!  </p>
-<hr>
-<h2 id="修改-Root-密码，开启远程访问"><a href="#修改-Root-密码，开启远程访问" class="headerlink" title="修改 Root 密码，开启远程访问"></a>修改 Root 密码，开启远程访问</h2><blockquote>
-<p>cd /usr/local/mysql<br>./bin/mysqld_safe –skip-grant-tables –skip-networking&amp;  </p>
-</blockquote>
-<p>登陆</p>
-<blockquote>
-<p>cd /usr/local/mysql/bin<br>./mysql -uroot -p  </p>
-</blockquote>
-<p>修改密码、授权远程登陆</p>
-<blockquote>
-<p>mysql&gt;<br>set password=password(“123456”);<br>use mysql;<br>update user set host=’%’ where user=’root’;<br>GRANT ALL PRIVILEGES ON <em>.</em> TO ‘myuser‘@’%’ IDENTIFIED BY ‘mypwd’ WITH GRANT OPTION;<br>FLUSH PRIVILEGES;<br>exit;  </p>
-</blockquote>
-<p>重启 MySQL 服务  </p>
-<blockquote>
-<p>service mysql restart;  </p>
-</blockquote>
-<p>查看编码  </p>
-<blockquote>
-<p>show variables like ‘character%’;</p>
-</blockquote>
-<hr>
-<h2 id="配置-MySQL-服务开机自动启动"><a href="#配置-MySQL-服务开机自动启动" class="headerlink" title="配置 MySQL 服务开机自动启动"></a>配置 MySQL 服务开机自动启动</h2><p>拷贝启动文件到 /etc/init.d/ 下并重命令为 mysqld  </p>
-<blockquote>
-<p>cp /usr/local/mysql/support-files/mysql.server /etc/init.d/mysqld  </p>
-</blockquote>
-<p>增加执行权限  </p>
-<blockquote>
-<p>chmod 755 /etc/init.d/mysqld  </p>
-</blockquote>
-<p>检查自启动项列表中没有 mysqld 这个，如果没有就添加 mysqld  </p>
-<blockquote>
-<p>chkconfig –list mysqld<br>chkconfig –add mysqld  </p>
-</blockquote>
-<p>设置MySQL在345等级自动启动</p>
-<blockquote>
-<p>chkconfig –level 345 mysqld on  </p>
-</blockquote>
-<p>或用这个命令设置开机启动:  </p>
-<blockquote>
-<p>chkconfig mysqld on  </p>
-</blockquote>
-<hr>
-<h2 id="MySQL-服务的启动-重启-停止"><a href="#MySQL-服务的启动-重启-停止" class="headerlink" title="MySQL 服务的启动/重启/停止"></a>MySQL 服务的启动/重启/停止</h2><p>启动 MySQL 服务  </p>
-<blockquote>
-<p>service mysqld start  </p>
-</blockquote>
-<p>停止 MySQL 服务  </p>
-<blockquote>
-<p>service mysqld stop</p>
-</blockquote>
-<p>重启 MySQL 服务  </p>
-<blockquote>
-<p>service mysqld restart  </p>
+<p>HTTP 响应码应变为 206，如下所示：<br><img src="https://raw.githubusercontent.com/leaveslm/blog-image/master/blog/2018/20180731175155.png" alt="avatar"></p>
+<h2 id="实现，以-Spring-Boot-1-5-14-RELEASE-为例"><a href="#实现，以-Spring-Boot-1-5-14-RELEASE-为例" class="headerlink" title="实现，以 Spring Boot 1.5.14.RELEASE 为例"></a>实现，以 Spring Boot 1.5.14.RELEASE 为例</h2><p>实现方法如下，关键点在于 HTTP 响应头设置，其他注意点已在注释中说明</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 文件下载，断点续传</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param</span> request</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param</span> response</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param</span> fileName</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@return</span></span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">download</span><span class="params">(HttpServletRequest request, HttpServletResponse response, String fileName)</span> </span>&#123;</span><br><span class="line">    <span class="comment">//文件目录</span></span><br><span class="line">    Calendar calendar = Calendar.getInstance();</span><br><span class="line">    File serverDir = <span class="keyword">new</span> File(System.getProperty(<span class="string">"user.dir"</span>) + File.separator + <span class="string">"uploads"</span> + File.separator + calendar.get(Calendar.YEAR) + File.separator + calendar.get(Calendar.MONTH));</span><br><span class="line">    File file = <span class="keyword">new</span> File(serverDir + File.separator + fileName);</span><br><span class="line"></span><br><span class="line">    <span class="comment">//下载开始位置</span></span><br><span class="line">    <span class="keyword">long</span> startByte = <span class="number">0</span>;</span><br><span class="line">    <span class="comment">//下载结束位置</span></span><br><span class="line">    <span class="keyword">long</span> endByte = file.length() - <span class="number">1</span>;</span><br><span class="line"></span><br><span class="line">    <span class="comment">//获取下载范围</span></span><br><span class="line">    String range = request.getHeader(<span class="string">"range"</span>);</span><br><span class="line">    <span class="keyword">if</span> (range != <span class="keyword">null</span> &amp;&amp; range.contains(<span class="string">"bytes="</span>) &amp;&amp; range.contains(<span class="string">"-"</span>)) &#123;</span><br><span class="line">        range = range.substring(range.lastIndexOf(<span class="string">"="</span>) + <span class="number">1</span>).trim();</span><br><span class="line">        String rangeArray[] = range.split(<span class="string">"-"</span>);</span><br><span class="line">        <span class="keyword">if</span> (rangeArray.length == <span class="number">1</span>) &#123;</span><br><span class="line">            <span class="comment">//Example: bytes=1024-</span></span><br><span class="line">            <span class="keyword">if</span> (range.endsWith(<span class="string">"-"</span>)) &#123;</span><br><span class="line">                startByte = Long.parseLong(rangeArray[<span class="number">0</span>]);</span><br><span class="line">            &#125; <span class="keyword">else</span> &#123; <span class="comment">//Example: bytes=-1024</span></span><br><span class="line">                endByte = Long.parseLong(rangeArray[<span class="number">0</span>]);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">//Example: bytes=2048-4096</span></span><br><span class="line">        <span class="keyword">else</span> <span class="keyword">if</span> (rangeArray.length == <span class="number">2</span>) &#123;</span><br><span class="line">            startByte = Long.parseLong(rangeArray[<span class="number">0</span>]);</span><br><span class="line">            endByte = Long.parseLong(rangeArray[<span class="number">1</span>]);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">long</span> contentLength = endByte - startByte + <span class="number">1</span>;</span><br><span class="line">    String contentType = request.getServletContext().getMimeType(fileName);</span><br><span class="line"></span><br><span class="line">    <span class="comment">//HTTP 响应头设置</span></span><br><span class="line">    <span class="comment">//断点续传，HTTP 状态码必须为 206，否则不设置，如果非断点续传设置 206 状态码，则浏览器无法下载</span></span><br><span class="line">    <span class="keyword">if</span> (range != <span class="keyword">null</span>) &#123;</span><br><span class="line">        response.setStatus(HttpServletResponse.SC_PARTIAL_CONTENT);</span><br><span class="line">    &#125;</span><br><span class="line">    response.setContentType(contentType);</span><br><span class="line">    response.setHeader(<span class="string">"Content-Type"</span>, contentType);</span><br><span class="line">    response.setHeader(<span class="string">"Content-Length"</span>, String.valueOf(contentLength));</span><br><span class="line">    response.setHeader(<span class="string">"Accept-Ranges"</span>, <span class="string">"bytes"</span>);</span><br><span class="line">    <span class="comment">//Content-Range: 下载开始位置-下载结束位置/文件大小</span></span><br><span class="line">    response.setHeader(<span class="string">"Content-Range"</span>, <span class="string">"bytes "</span> + startByte + <span class="string">"-"</span> + endByte + <span class="string">"/"</span> + file.length());</span><br><span class="line">    <span class="comment">//Content-disposition: inline; filename=xxx.xxx 表示浏览器内嵌显示该文件</span></span><br><span class="line">    <span class="comment">//Content-disposition: attachment; filename=xxx.xxx 表示浏览器下载该文件</span></span><br><span class="line">    response.setHeader(<span class="string">"Content-Disposition"</span>, <span class="string">"inline; filename="</span> + fileName);</span><br><span class="line"></span><br><span class="line">    <span class="comment">//传输文件流</span></span><br><span class="line">    BufferedOutputStream outputStream = <span class="keyword">null</span>;</span><br><span class="line">    RandomAccessFile randomAccessFile = <span class="keyword">null</span>;</span><br><span class="line">    <span class="comment">//已传送数据大小</span></span><br><span class="line">    <span class="keyword">long</span> transmittedLength = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">try</span> &#123;</span><br><span class="line">        <span class="comment">//以只读模式设置文件指针偏移量</span></span><br><span class="line">        randomAccessFile = <span class="keyword">new</span> RandomAccessFile(file, <span class="string">"r"</span>);</span><br><span class="line">        randomAccessFile.seek(startByte);</span><br><span class="line"></span><br><span class="line">        outputStream = <span class="keyword">new</span> BufferedOutputStream(response.getOutputStream());</span><br><span class="line">        <span class="keyword">byte</span>[] buff = <span class="keyword">new</span> <span class="keyword">byte</span>[<span class="number">4096</span>];</span><br><span class="line">        <span class="keyword">int</span> len;</span><br><span class="line">        <span class="keyword">while</span> (transmittedLength &lt; contentLength &amp;&amp; (len = randomAccessFile.read(buff)) != -<span class="number">1</span>) &#123;</span><br><span class="line">            outputStream.write(buff, <span class="number">0</span>, len);</span><br><span class="line">            transmittedLength += len;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        outputStream.flush();</span><br><span class="line">        response.flushBuffer();</span><br><span class="line">        logger.info(<span class="string">"下载完毕: &#123;&#125;-&#123;&#125;: &#123;&#125;"</span>, startByte, endByte, transmittedLength);</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">true</span>;</span><br><span class="line"></span><br><span class="line">    &#125; <span class="keyword">catch</span> (IOException e) &#123;</span><br><span class="line">        logger.info(<span class="string">"下载停止: &#123;&#125;-&#123;&#125;: &#123;&#125;"</span>, startByte, endByte, transmittedLength);</span><br><span class="line">    &#125; <span class="keyword">finally</span> &#123;</span><br><span class="line">        <span class="keyword">try</span> &#123;</span><br><span class="line">            <span class="keyword">if</span> (randomAccessFile != <span class="keyword">null</span>) &#123;</span><br><span class="line">                randomAccessFile.close();</span><br><span class="line">            &#125;</span><br><span class="line">        &#125; <span class="keyword">catch</span> (IOException e) &#123;</span><br><span class="line">            e.printStackTrace();</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">false</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="多媒体播放"><a href="#多媒体播放" class="headerlink" title="多媒体播放"></a>多媒体播放</h2><p>实现断点续传是多媒体播放的关键点</p>
+<h3 id="HTML-示例"><a href="#HTML-示例" class="headerlink" title="HTML 示例"></a>HTML 示例</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE html&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">"en"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"UTF-8"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>Video<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">video</span> <span class="attr">src</span>=<span class="string">"http://127.0.0.1:8001/demo/download/o_1cjkl6f5o1lslun02dv1mn3nup2n.mp4"</span> <span class="attr">controls</span>=<span class="string">"controls"</span>&gt;</span></span><br><span class="line">    Your browser does not support the video tag.</span><br><span class="line"><span class="tag">&lt;/<span class="name">video</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">br</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">embed</span> <span class="attr">src</span>=<span class="string">"http://27.0.0.1:8001/demo/download/%E5%A6%82%E6%AD%8C.mp3"</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h3 id="效果图"><a href="#效果图" class="headerlink" title="效果图"></a>效果图</h3><p><img src="https://raw.githubusercontent.com/leaveslm/blog-image/master/blog/2018/20180731171110.png" alt="avatar"><br><img src="https://raw.githubusercontent.com/leaveslm/blog-image/master/blog/2018/20180731171111.png" alt="avatar">  </p>
+<h2 id="参考与感谢"><a href="#参考与感谢" class="headerlink" title="参考与感谢"></a>参考与感谢</h2><blockquote>
+<p><a href="https://www.ibm.com/developerworks/cn/java/joy-down/index.html" target="_blank" rel="noopener">钟华 : 用 Java 实现断点续传 (HTTP)</a></p>
 </blockquote>
 
       
@@ -557,9 +453,9 @@
       
         <div class="post-tags">
           
-            <a href="/tags/mysql/" rel="tag"># mysql</a>
+            <a href="/tags/java/" rel="tag"># java</a>
           
-            <a href="/tags/linux/" rel="tag"># linux</a>
+            <a href="/tags/spring-boot/" rel="tag"># spring boot</a>
           
         </div>
       
@@ -572,8 +468,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/04/24/2018-2018-04-24-Windows-安装-MySQL-5-7/" rel="next" title="Windows 安装 MySQL 5.7">
-                <i class="fa fa-chevron-left"></i> Windows 安装 MySQL 5.7
+              <a href="/2018/07/30/2018-2018-07-30-Plupload-文件断点续传-文件分块上传/" rel="next" title="Plupload 文件断点续传 文件分块上传">
+                <i class="fa fa-chevron-left"></i> Plupload 文件断点续传 文件分块上传
               </a>
             
           </div>
@@ -581,10 +477,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/07/25/2018-2018-07-25-Linux-安装-Redis/" rel="prev" title="Linux 安装 Redis">
-                Linux 安装 Redis <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -756,7 +648,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#清理-MySQL、下载解压"><span class="nav-number">1.</span> <span class="nav-text">清理 MySQL、下载解压</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#创建-MySQL-组、用户"><span class="nav-number">2.</span> <span class="nav-text">创建 MySQL 组、用户</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#修改-my-cnf-配置文件"><span class="nav-number">3.</span> <span class="nav-text">修改 my.cnf 配置文件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#初始化-MySQL-数据库"><span class="nav-number">4.</span> <span class="nav-text">初始化 MySQL 数据库</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#启动-MySQL-服务"><span class="nav-number">5.</span> <span class="nav-text">启动 MySQL 服务</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#修改-Root-密码，开启远程访问"><span class="nav-number">6.</span> <span class="nav-text">修改 Root 密码，开启远程访问</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#配置-MySQL-服务开机自动启动"><span class="nav-number">7.</span> <span class="nav-text">配置 MySQL 服务开机自动启动</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#MySQL-服务的启动-重启-停止"><span class="nav-number">8.</span> <span class="nav-text">MySQL 服务的启动/重启/停止</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#断点续传"><span class="nav-number">1.</span> <span class="nav-text">断点续传</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#关键点"><span class="nav-number">2.</span> <span class="nav-text">关键点</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#实现，以-Spring-Boot-1-5-14-RELEASE-为例"><span class="nav-number">3.</span> <span class="nav-text">实现，以 Spring Boot 1.5.14.RELEASE 为例</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#多媒体播放"><span class="nav-number">4.</span> <span class="nav-text">多媒体播放</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#HTML-示例"><span class="nav-number">4.1.</span> <span class="nav-text">HTML 示例</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#效果图"><span class="nav-number">4.2.</span> <span class="nav-text">效果图</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#参考与感谢"><span class="nav-number">5.</span> <span class="nav-text">参考与感谢</span></a></li></ol></div>
             
 
           </div>
