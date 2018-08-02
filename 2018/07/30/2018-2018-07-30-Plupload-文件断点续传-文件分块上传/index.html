@@ -410,7 +410,10 @@
 <span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">upload</span><span class="params">(HttpServletRequest request, HttpServletResponse response, Plupload plupload)</span> </span>{
     <span class="comment">//按日期文件夹保存</span>
     Calendar calendar = Calendar.getInstance();
-    File serverDir = <span class="keyword">new</span> File(System.getProperty(<span class="string">"user.dir"</span>) + File.separator + <span class="string">"uploads"</span> + File.separator + calendar.get(Calendar.YEAR) + File.separator + calendar.get(Calendar.MONTH));
+    File serverDir = <span class="keyword">new</span> File(System.getProperty(<span class="string">"user.dir"</span>) + File.separator
+            + <span class="string">"uploads"</span> + File.separator
+            + calendar.get(Calendar.YEAR) + File.separator
+            + (calendar.get(Calendar.MONTH) + <span class="number">1</span>));
     <span class="comment">//mkdirs() 可创建多级目录，mkdir() 只能创建一级目录</span>
     <span class="keyword">if</span> (!serverDir.exists()) {
         <span class="keyword">if</span> (serverDir.mkdirs()) {
