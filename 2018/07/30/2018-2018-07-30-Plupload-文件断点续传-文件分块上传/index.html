@@ -506,6 +506,7 @@
     } <span class="keyword">finally</span> {
         <span class="keyword">try</span> {
             <span class="keyword">if</span> (outputStream != <span class="keyword">null</span>) {
+                outputStream.flush();
                 outputStream.close();
             }
             <span class="keyword">if</span> (inputStream != <span class="keyword">null</span>) {
