@@ -10,6 +10,7 @@
       <tags>
         <tag>java</tag>
         <tag>spring boot</tag>
+        <tag>断点续传</tag>
       </tags>
   </entry>
   <entry>
@@ -22,6 +23,7 @@
       <tags>
         <tag>java</tag>
         <tag>spring boot</tag>
+        <tag>断点续传</tag>
       </tags>
   </entry>
   <entry>
@@ -32,8 +34,8 @@
         <category>基础服务</category>
       </categories>
       <tags>
-        <tag>linux</tag>
         <tag>redis</tag>
+        <tag>linux</tag>
       </tags>
   </entry>
   <entry>
@@ -56,8 +58,8 @@
         <category>基础服务</category>
       </categories>
       <tags>
-        <tag>mysql</tag>
         <tag>windows</tag>
+        <tag>mysql</tag>
       </tags>
   </entry>
   <entry>
@@ -68,9 +70,9 @@
         <category>算法</category>
       </categories>
       <tags>
-        <tag>java</tag>
         <tag>地图</tag>
         <tag>gps</tag>
+        <tag>java</tag>
       </tags>
   </entry>
   <entry>
