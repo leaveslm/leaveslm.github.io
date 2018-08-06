@@ -17,7 +17,7 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>断点续传下载文件 多媒体在线播放</title>
+    <title>断点续传下载文件，多媒体在线播放</title>
     <link href="http://leaveslm.github.io/2018/07/31/2018-2018-07-31-%E6%96%AD%E7%82%B9%E7%BB%AD%E4%BC%A0%E4%B8%8B%E8%BD%BD%E6%96%87%E4%BB%B6-%E5%A4%9A%E5%AA%92%E4%BD%93%E5%9C%A8%E7%BA%BF%E6%92%AD%E6%94%BE/"/>
     <id>http://leaveslm.github.io/2018/07/31/2018-2018-07-31-断点续传下载文件-多媒体在线播放/</id>
     <published>2018-07-31T08:08:26.000Z</published>
@@ -44,7 +44,7 @@
   </entry>
   
   <entry>
-    <title>Plupload 文件断点续传 文件分块上传</title>
+    <title>Plupload 文件断点续传，文件分块上传</title>
     <link href="http://leaveslm.github.io/2018/07/30/2018-2018-07-30-Plupload-%E6%96%87%E4%BB%B6%E6%96%AD%E7%82%B9%E7%BB%AD%E4%BC%A0-%E6%96%87%E4%BB%B6%E5%88%86%E5%9D%97%E4%B8%8A%E4%BC%A0/"/>
     <id>http://leaveslm.github.io/2018/07/30/2018-2018-07-30-Plupload-文件断点续传-文件分块上传/</id>
     <published>2018-07-30T06:11:01.000Z</published>
@@ -147,9 +147,9 @@
       <category term="基础服务" scheme="http://leaveslm.github.io/categories/%E5%9F%BA%E7%A1%80%E6%9C%8D%E5%8A%A1/"/>
     
     
-      <category term="windows" scheme="http://leaveslm.github.io/tags/windows/"/>
-    
       <category term="mysql" scheme="http://leaveslm.github.io/tags/mysql/"/>
+    
+      <category term="windows" scheme="http://leaveslm.github.io/tags/windows/"/>
     
   </entry>
   
@@ -174,11 +174,11 @@
       <category term="算法" scheme="http://leaveslm.github.io/categories/%E7%AE%97%E6%B3%95/"/>
     
     
+      <category term="java" scheme="http://leaveslm.github.io/tags/java/"/>
+    
       <category term="地图" scheme="http://leaveslm.github.io/tags/%E5%9C%B0%E5%9B%BE/"/>
     
       <category term="gps" scheme="http://leaveslm.github.io/tags/gps/"/>
-    
-      <category term="java" scheme="http://leaveslm.github.io/tags/java/"/>
     
   </entry>
   
