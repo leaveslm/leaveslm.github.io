@@ -34,8 +34,8 @@
         <category>基础服务</category>
       </categories>
       <tags>
-        <tag>redis</tag>
         <tag>linux</tag>
+        <tag>redis</tag>
       </tags>
   </entry>
   <entry>
@@ -70,9 +70,9 @@
         <category>算法</category>
       </categories>
       <tags>
+        <tag>java</tag>
         <tag>地图</tag>
         <tag>gps</tag>
-        <tag>java</tag>
       </tags>
   </entry>
   <entry>
