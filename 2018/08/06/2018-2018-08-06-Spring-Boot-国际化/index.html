@@ -110,18 +110,28 @@
 
 
 
-  <meta name="description" content="MySQL 5.7.22 官方下载地址 清理 MySQL、下载解压清理    find / -name mysql | xargs rm -rf    下载    wget https://dev.mysql.com/get/Downloads/MySQL-5.7/mysql-5.7.22-linux-glibc2.12-x86_64.tar.gz  解压    tar -zxvf mysql-5">
-<meta name="keywords" content="mysql,linux">
+  <meta name="description" content="前言在信息技术领域，国际化与本地化（英文：internationalization and localization）是指修改软件使之能适应目标市场的语言、地区差异以及技术需要。 国际化是指在设计软件，将软件与特定语言及地区脱钩的过程。当软件被移植到不同的语言及地区时，软件本身不用做内部工程上的改变或修正。本地化则是指当移植软件时，加上与特定区域设置有关的信息和翻译文件的过程。 国际化和本地化之间">
+<meta name="keywords" content="java,spring boot,国际化">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Linux 安装 MySQL 5.7">
-<meta property="og:url" content="http://leaveslm.github.io/2018/07/18/2018-2018-07-18-Linux-安装-MySQL-5-7/index.html">
+<meta property="og:title" content="Spring Boot 国际化">
+<meta property="og:url" content="http://leaveslm.github.io/2018/08/06/2018-2018-08-06-Spring-Boot-国际化/index.html">
 <meta property="og:site_name" content="Notes For Leaves">
-<meta property="og:description" content="MySQL 5.7.22 官方下载地址 清理 MySQL、下载解压清理    find / -name mysql | xargs rm -rf    下载    wget https://dev.mysql.com/get/Downloads/MySQL-5.7/mysql-5.7.22-linux-glibc2.12-x86_64.tar.gz  解压    tar -zxvf mysql-5">
+<meta property="og:description" content="前言在信息技术领域，国际化与本地化（英文：internationalization and localization）是指修改软件使之能适应目标市场的语言、地区差异以及技术需要。 国际化是指在设计软件，将软件与特定语言及地区脱钩的过程。当软件被移植到不同的语言及地区时，软件本身不用做内部工程上的改变或修正。本地化则是指当移植软件时，加上与特定区域设置有关的信息和翻译文件的过程。 国际化和本地化之间">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2018-07-21T15:17:00.000Z">
+<meta property="og:image" content="https://raw.githubusercontent.com/leaveslm/blog-image/master/blog/2018/8/20180806164109.jpg">
+<meta property="og:image" content="https://raw.githubusercontent.com/leaveslm/blog-image/master/blog/2018/8/20180806172556.jpg">
+<meta property="og:image" content="https://raw.githubusercontent.com/leaveslm/blog-image/master/blog/2018/8/20180806172557.jpg">
+<meta property="og:image" content="https://raw.githubusercontent.com/leaveslm/blog-image/master/blog/2018/8/20180806172558.jpg">
+<meta property="og:image" content="https://raw.githubusercontent.com/leaveslm/blog-image/master/blog/2018/8/20180806172559.jpg">
+<meta property="og:image" content="https://raw.githubusercontent.com/leaveslm/blog-image/master/blog/2018/8/20180806172601.jpg">
+<meta property="og:image" content="https://raw.githubusercontent.com/leaveslm/blog-image/master/blog/2018/8/20180806172602.jpg">
+<meta property="og:image" content="https://raw.githubusercontent.com/leaveslm/blog-image/master/blog/2018/8/20180806172603.jpg">
+<meta property="og:image" content="https://raw.githubusercontent.com/leaveslm/blog-image/master/blog/2018/8/20180806172604.jpg">
+<meta property="og:updated_time" content="2018-08-08T01:54:00.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Linux 安装 MySQL 5.7">
-<meta name="twitter:description" content="MySQL 5.7.22 官方下载地址 清理 MySQL、下载解压清理    find / -name mysql | xargs rm -rf    下载    wget https://dev.mysql.com/get/Downloads/MySQL-5.7/mysql-5.7.22-linux-glibc2.12-x86_64.tar.gz  解压    tar -zxvf mysql-5">
+<meta name="twitter:title" content="Spring Boot 国际化">
+<meta name="twitter:description" content="前言在信息技术领域，国际化与本地化（英文：internationalization and localization）是指修改软件使之能适应目标市场的语言、地区差异以及技术需要。 国际化是指在设计软件，将软件与特定语言及地区脱钩的过程。当软件被移植到不同的语言及地区时，软件本身不用做内部工程上的改变或修正。本地化则是指当移植软件时，加上与特定区域设置有关的信息和翻译文件的过程。 国际化和本地化之间">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/leaveslm/blog-image/master/blog/2018/8/20180806164109.jpg">
 
 
 
@@ -130,7 +140,7 @@
 
 
 
-  <link rel="canonical" href="http://leaveslm.github.io/2018/07/18/2018-2018-07-18-Linux-安装-MySQL-5-7/"/>
+  <link rel="canonical" href="http://leaveslm.github.io/2018/08/06/2018-2018-08-06-Spring-Boot-国际化/"/>
 
 
 
@@ -140,7 +150,7 @@
   };
 </script>
 
-  <title>Linux 安装 MySQL 5.7 | Notes For Leaves</title>
+  <title>Spring Boot 国际化 | Notes For Leaves</title>
   
 
 
@@ -336,7 +346,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://leaveslm.github.io/2018/07/18/2018-2018-07-18-Linux-安装-MySQL-5-7/">
+    <link itemprop="mainEntityOfPage" href="http://leaveslm.github.io/2018/08/06/2018-2018-08-06-Spring-Boot-国际化/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Leaves">
@@ -353,7 +363,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Linux 安装 MySQL 5.7
+          <h1 class="post-title" itemprop="name headline">Spring Boot 国际化
               
             
           </h1>
@@ -378,7 +388,7 @@
                 
               
 
-              <time title="Created: 2018-07-18 17:05:28" itemprop="dateCreated datePublished" datetime="2018-07-18T17:05:28+08:00">2018-07-18</time>
+              <time title="Created: 2018-08-06 15:43:00" itemprop="dateCreated datePublished" datetime="2018-08-06T15:43:00+08:00">2018-08-06</time>
             
 
             
@@ -395,7 +405,7 @@
                 
                   <span class="post-meta-item-text">Edited on</span>
                 
-                <time title="Modified: 2018-07-21 23:17:00" itemprop="dateModified" datetime="2018-07-21T23:17:00+08:00">2018-07-21</time>
+                <time title="Modified: 2018-08-08 09:54:00" itemprop="dateModified" datetime="2018-08-08T09:54:00+08:00">2018-08-08</time>
               
             
           </span>
@@ -412,7 +422,7 @@
                 <span class="post-meta-item-text">In</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/基础服务/" itemprop="url" rel="index"><span itemprop="name">基础服务</span></a></span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/代码/" itemprop="url" rel="index"><span itemprop="name">代码</span></a></span>
 
                 
                 
@@ -454,132 +464,41 @@
       
 
       
-        <p>MySQL 5.7.22 官方<a href="https://dev.mysql.com/downloads/mysql/5.7.html#downloads" target="_blank" rel="noopener">下载地址</a></p>
-<h2 id="清理-MySQL、下载解压"><a href="#清理-MySQL、下载解压" class="headerlink" title="清理 MySQL、下载解压"></a>清理 MySQL、下载解压</h2><p>清理  </p>
-<blockquote>
-<p>find / -name mysql | xargs rm -rf  </p>
-</blockquote>
-<p>下载  </p>
-<blockquote>
-<p>wget <a href="https://dev.mysql.com/get/Downloads/MySQL-5.7/mysql-5.7.22-linux-glibc2.12-x86_64.tar.gz" target="_blank" rel="noopener">https://dev.mysql.com/get/Downloads/MySQL-5.7/mysql-5.7.22-linux-glibc2.12-x86_64.tar.gz</a></p>
-</blockquote>
-<p>解压  </p>
-<blockquote>
-<p>tar -zxvf mysql-5.7.22-linux-glibc2.12-x86_64.tar.gz</p>
-</blockquote>
-<p>重命名    </p>
-<blockquote>
-<p>mv mysql-5.7.22-linux-glibc2.12-x86_64 mysql </p>
-</blockquote>
-<hr>
-<h2 id="创建-MySQL-组、用户"><a href="#创建-MySQL-组、用户" class="headerlink" title="创建 MySQL 组、用户"></a>创建 MySQL 组、用户</h2><p>查看有没有mysql组  </p>
-<blockquote>
-<p>cat /etc/group | grep mysql  </p>
-</blockquote>
-<p>查看有没有mysql用户</p>
-<blockquote>
-<p>cat /etc/passwd |grep mysql  </p>
-</blockquote>
-<p>没有则创建 </p>
-<blockquote>
-<p>groupadd mysql<br>useradd -r -g mysql mysql  </p>
-</blockquote>
-<p>更改 mysql 目录下所有的目录及文件夹所属组合用户</p>
-<blockquote>
-<p>chown -R mysql mysql<br>chgrp -R mysql mysql<br>cd mysql<br>ls -l<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">drwxr-xr-x.  2 mysql mysql  4096 7月  18 15:04 bin</span><br><span class="line">-rw-r--r--.  1 mysql mysql 17987 3月   4 21:40 COPYING</span><br><span class="line">drwxr-xr-x.  2 mysql mysql    52 7月  18 15:04 docs</span><br><span class="line">drwxr-xr-x.  3 mysql mysql  4096 7月  18 15:04 include</span><br><span class="line">drwxr-xr-x.  5 mysql mysql  4096 7月  18 15:04 lib</span><br><span class="line">drwxr-xr-x.  4 mysql mysql    28 7月  18 15:04 man</span><br><span class="line">-rw-r--r--.  1 mysql mysql  2478 3月   4 21:40 README</span><br><span class="line">drwxr-xr-x. 28 mysql mysql  4096 7月  18 15:04 share</span><br><span class="line">drwxr-xr-x.  2 mysql mysql    86 7月  18 15:08 support-files</span><br></pre></td></tr></table></figure></p>
-</blockquote>
-<hr>
-<h2 id="修改-my-cnf-配置文件"><a href="#修改-my-cnf-配置文件" class="headerlink" title="修改 my.cnf 配置文件"></a>修改 my.cnf 配置文件</h2><p>从 5.7.18 开始不在二进制包中提供 my-default.cnf 文件</p>
-<blockquote>
-<p>vi /etc/my.cnf</p>
-</blockquote>
-<p>my-default.cnf<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line"># For advice on how to change settings please see</span><br><span class="line">#  </span><br><span class="line"># *** DO NOT EDIT THIS FILE. It‘s a template which will be copied to the</span><br><span class="line"># *** default location during install, and will be replaced if you</span><br><span class="line"># *** upgrade to a newer version of MySQL.</span><br><span class="line"></span><br><span class="line">[mysqld]</span><br><span class="line"></span><br><span class="line"># Remove leading # and set to the amount of RAM for the most important data</span><br><span class="line"># cache in MySQL. Start at 70% of total RAM for dedicated server, else 10%.</span><br><span class="line"># innodb_buffer_pool_size = 128M</span><br><span class="line"></span><br><span class="line"># Remove leading # to turn on a very important data integrity option: logging</span><br><span class="line"># changes to the binary log between backups.</span><br><span class="line"># log_bin</span><br><span class="line"></span><br><span class="line"># These are commonly set, remove the # and set as required.</span><br><span class="line"># basedir = .....</span><br><span class="line"># datadir = .....</span><br><span class="line"># port = .....</span><br><span class="line"># server_id = .....</span><br><span class="line"># socket = .....</span><br><span class="line"></span><br><span class="line"># Remove leading # to set options mainly useful for reporting servers.</span><br><span class="line"># The server defaults are faster for transactions and fast SELECTs.</span><br><span class="line"># Adjust sizes as needed, experiment to find the optimal values.</span><br><span class="line"># join_buffer_size = 128M</span><br><span class="line"># sort_buffer_size = 2M</span><br><span class="line"># read_rnd_buffer_size = 2M </span><br><span class="line"></span><br><span class="line">sql_mode=NO_ENGINE_SUBSTITUTION,STRICT_TRANS_TABLES</span><br></pre></td></tr></table></figure></p>
-<p>my.cnf<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br></pre></td><td class="code"><pre><span class="line"># For advice on how to change settings please see</span><br><span class="line">#  </span><br><span class="line"># *** DO NOT EDIT THIS FILE. It‘s a template which will be copied to the</span><br><span class="line"># *** default location during install, and will be replaced if you</span><br><span class="line"># *** upgrade to a newer version of MySQL.</span><br><span class="line"></span><br><span class="line">[client]</span><br><span class="line">default-character-set = utf8</span><br><span class="line"></span><br><span class="line">[mysql]</span><br><span class="line">default-character-set = utf8</span><br><span class="line">socket = /var/lib/mysql/mysql.sock</span><br><span class="line"></span><br><span class="line">[mysqld]</span><br><span class="line">character-set-server = utf8</span><br><span class="line"></span><br><span class="line"># Remove leading # and set to the amount of RAM for the most important data</span><br><span class="line"># cache in MySQL. Start at 70% of total RAM for dedicated server, else 10%.</span><br><span class="line"># innodb_buffer_pool_size = 128M</span><br><span class="line"></span><br><span class="line"># Remove leading # to turn on a very important data integrity option: logging</span><br><span class="line"># changes to the binary log between backups.</span><br><span class="line"># log_bin</span><br><span class="line"></span><br><span class="line"># These are commonly set, remove the # and set as required.</span><br><span class="line">basedir = /usr/local/mysql/</span><br><span class="line">datadir = /usr/local/mysql/data/</span><br><span class="line">port = 3306</span><br><span class="line">#server_id = </span><br><span class="line">socket = /var/lib/mysql/mysql.sock</span><br><span class="line"></span><br><span class="line"># Remove leading # to set options mainly useful for reporting servers.</span><br><span class="line"># The server defaults are faster for transactions and fast SELECTs.</span><br><span class="line"># Adjust sizes as needed, experiment to find the optimal values.</span><br><span class="line"># join_buffer_size = 128M</span><br><span class="line"># sort_buffer_size = 2M</span><br><span class="line"># read_rnd_buffer_size = 2M</span><br><span class="line">max_connections = 1000</span><br><span class="line"></span><br><span class="line">sql_mode=NO_ENGINE_SUBSTITUTION,STRICT_TRANS_TABLES</span><br></pre></td></tr></table></figure></p>
-<hr>
-<h2 id="初始化-MySQL-数据库"><a href="#初始化-MySQL-数据库" class="headerlink" title="初始化 MySQL 数据库"></a>初始化 MySQL 数据库</h2><p>初始化</p>
-<blockquote>
-<p>cd /usr/local/mysql<br>./bin/mysqld –user=mysql –basedir=/usr/local/mysql –datadir=/usr/local/mysql/data –initialize   </p>
-</blockquote>
-<p>输出如下：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">2018-07-18T07:06:49.223422Z 0 [Warning] TIMESTAMP with implicit DEFAULT value is deprecated. Please use --explicit_defaults_for_timestamp server option (see documentation for more details).</span><br><span class="line">2018-07-18T07:06:49.223579Z 0 [Warning] &apos;NO_ZERO_DATE&apos;, &apos;NO_ZERO_IN_DATE&apos; and &apos;ERROR_FOR_DIVISION_BY_ZERO&apos; sql modes should be used with strict mode. They will be merged with strict mode in a future release.</span><br><span class="line">2018-07-18T07:06:49.223591Z 0 [Warning] &apos;NO_AUTO_CREATE_USER&apos; sql mode was not set.</span><br><span class="line">2018-07-18T07:06:50.630648Z 0 [Warning] InnoDB: New log files created, LSN=45790</span><br><span class="line">2018-07-18T07:06:51.000475Z 0 [Warning] InnoDB: Creating foreign key constraint system tables.</span><br><span class="line">2018-07-18T07:06:51.028751Z 0 [Warning] No existing UUID has been found, so we assume that this is the first time that this server has been started. Generating a new UUID: 24e198b5-8a59-11e8-9a33-aeceb5cf96b1.</span><br><span class="line">2018-07-18T07:06:51.031122Z 0 [Warning] Gtid table is not ready to be used. Table &apos;mysql.gtid_executed&apos; cannot be opened.</span><br><span class="line">2018-07-18T07:06:51.045661Z 1 [Note] A temporary password is generated for root@localhost: Ra%p1C(&gt;7J(p</span><br></pre></td></tr></table></figure></p>
-<p>添加 RSA Key </p>
-<blockquote>
-<p>cd /usr/local/mysql<br>bin/mysql_ssl_rsa_setup  –datadir=/usr/local/mysql/data<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">Generating a 2048 bit RSA private key</span><br><span class="line">..+++</span><br><span class="line">.......................................................+++</span><br><span class="line">writing new private key to &apos;ca-key.pem&apos;</span><br><span class="line">-----</span><br><span class="line">Generating a 2048 bit RSA private key</span><br><span class="line">....................................................................+++</span><br><span class="line">...........................................................+++</span><br><span class="line">writing new private key to &apos;server-key.pem&apos;</span><br><span class="line">-----</span><br><span class="line">Generating a 2048 bit RSA private key</span><br><span class="line">..............................................................................................................................................+++</span><br><span class="line">..................................+++</span><br><span class="line">writing new private key to &apos;client-key.pem&apos;</span><br><span class="line">-----</span><br></pre></td></tr></table></figure></p>
-</blockquote>
-<p>编辑 /usr/local/mysql/support-files/mysql.server 文件</p>
-<blockquote>
-<p>vi /usr/local/mysql/support-files/mysql.server<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">...</span><br><span class="line">修改 basedir = /usr/local/mysql/</span><br><span class="line">修改 datadir = /usr/local/mysql/data/</span><br><span class="line">...</span><br></pre></td></tr></table></figure></p>
-</blockquote>
-<hr>
-<h2 id="启动-MySQL-服务"><a href="#启动-MySQL-服务" class="headerlink" title="启动 MySQL 服务"></a>启动 MySQL 服务</h2><blockquote>
-<p>cd /usr/local/mysql<br>./support-files/mysql.server start  </p>
-</blockquote>
-<p>注意：如果遇到以下问题，执行以下操作<br>Starting MySQL.Logging to ‘/usr/local/mysql/data/localhost.localdomain.err’.<br>2018-07-18T07:08:26.909710Z mysqld_safe Directory ‘/var/lib/mysql’ for UNIX socket file don’t exists. </p>
-<blockquote>
-<p>mkdir /var/lib/mysql<br>chown mysql:mysql /var/lib/mysql<br>cd /usr/local/mysql<br>./support-files/mysql.server start  </p>
-</blockquote>
-<p>Starting MySQL… SUCCESS!  </p>
-<blockquote>
-<p>./support-files/mysql.server stop  </p>
-</blockquote>
-<p>Shutting down MySQL… SUCCESS!  </p>
-<blockquote>
-<p>./support-files/mysql.server restart  </p>
-</blockquote>
-<p>Shutting down MySQL… SUCCESS!<br>Starting MySQL… SUCCESS!  </p>
-<hr>
-<h2 id="修改-Root-密码，开启远程访问"><a href="#修改-Root-密码，开启远程访问" class="headerlink" title="修改 Root 密码，开启远程访问"></a>修改 Root 密码，开启远程访问</h2><blockquote>
-<p>cd /usr/local/mysql<br>./bin/mysqld_safe –skip-grant-tables –skip-networking&amp;  </p>
-</blockquote>
-<p>登陆</p>
-<blockquote>
-<p>cd /usr/local/mysql/bin<br>./mysql -uroot -p  </p>
-</blockquote>
-<p>修改密码、授权远程登陆</p>
-<blockquote>
-<p>mysql&gt;<br>set password=password(“123456”);<br>use mysql;<br>update user set host=’%’ where user=’root’;<br>GRANT ALL PRIVILEGES ON <em>.</em> TO ‘myuser‘@’%’ IDENTIFIED BY ‘mypwd’ WITH GRANT OPTION;<br>FLUSH PRIVILEGES;<br>exit;  </p>
-</blockquote>
-<p>重启 MySQL 服务  </p>
-<blockquote>
-<p>service mysql restart;  </p>
-</blockquote>
-<p>查看编码  </p>
-<blockquote>
-<p>show variables like ‘character%’;</p>
-</blockquote>
-<hr>
-<h2 id="配置-MySQL-服务开机自动启动"><a href="#配置-MySQL-服务开机自动启动" class="headerlink" title="配置 MySQL 服务开机自动启动"></a>配置 MySQL 服务开机自动启动</h2><p>拷贝启动文件到 /etc/init.d/ 下并重命令为 mysqld  </p>
-<blockquote>
-<p>cp /usr/local/mysql/support-files/mysql.server /etc/init.d/mysqld  </p>
-</blockquote>
-<p>增加执行权限  </p>
-<blockquote>
-<p>chmod 755 /etc/init.d/mysqld  </p>
-</blockquote>
-<p>检查自启动项列表中没有 mysqld 这个，如果没有就添加 mysqld  </p>
-<blockquote>
-<p>chkconfig –list mysqld<br>chkconfig –add mysqld  </p>
-</blockquote>
-<p>设置MySQL在345等级自动启动</p>
-<blockquote>
-<p>chkconfig –level 345 mysqld on  </p>
-</blockquote>
-<p>或用这个命令设置开机启动:  </p>
-<blockquote>
-<p>chkconfig mysqld on  </p>
-</blockquote>
-<hr>
-<h2 id="MySQL-服务的启动-重启-停止"><a href="#MySQL-服务的启动-重启-停止" class="headerlink" title="MySQL 服务的启动/重启/停止"></a>MySQL 服务的启动/重启/停止</h2><p>启动 MySQL 服务  </p>
-<blockquote>
-<p>service mysqld start  </p>
-</blockquote>
-<p>停止 MySQL 服务  </p>
-<blockquote>
-<p>service mysqld stop</p>
-</blockquote>
-<p>重启 MySQL 服务  </p>
-<blockquote>
-<p>service mysqld restart  </p>
-</blockquote>
+        <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote><p>在信息技术领域，国际化与本地化（英文：internationalization and localization）是指修改软件使之能适应目标市场的语言、地区差异以及技术需要。</p>
+<p>国际化是指在设计软件，将软件与特定语言及地区脱钩的过程。当软件被移植到不同的语言及地区时，软件本身不用做内部工程上的改变或修正。本地化则是指当移植软件时，加上与特定区域设置有关的信息和翻译文件的过程。</p>
+<p>国际化和本地化之间的区别虽然微妙，但却很重要。国际化意味着产品有适用于任何地方的“潜力”；本地化则是为了更适合于“特定”地方的使用，而另外增添的特色。用一项产品来说，国际化只需做一次，但本地化则要针对不同的区域各做一次。这两者之间是互补的，并且两者合起来才能让一个系统适用于各地。</p>
+<p>基于他们的英文单字长度过长，常被分别简称成i18n（18意味着在“internationalization”这个单字中，i和n之间有18个字母）及L10n。使用大写的L以利区分i18n中的i和易于分辨小写l与1。</p>
+<footer><strong>@国际化与本地化</strong><cite><a href="https://zh.wikipedia.org/wiki/国际化与本地化" target="_blank" rel="noopener">zh.wikipedia.org/wiki/国际化与本地化</a></cite></footer></blockquote>
+<h2 id="定义国际化配置文件"><a href="#定义国际化配置文件" class="headerlink" title="定义国际化配置文件"></a>定义国际化配置文件</h2><h3 id="国际化配置文件"><a href="#国际化配置文件" class="headerlink" title="国际化配置文件"></a>国际化配置文件</h3><ul>
+<li>messages.properties（默认，当找不到语言的配置的时候，使用该文件语言进行展示）</li>
+<li>messages_en.properties（英语）  </li>
+<li>messages_de.propertie（德语）  </li>
+<li>messages_fr.properties（法语）  </li>
+<li>messages_zh_TW.properties（中文-繁体）  </li>
+</ul>
+<p>将这些文件放到 classpath:resources/i18n 目录下即可，如图：<br><img src="https://raw.githubusercontent.com/leaveslm/blog-image/master/blog/2018/8/20180806164109.jpg" alt="avatar"></p>
+<h3 id="国际化配置文件内容"><a href="#国际化配置文件内容" class="headerlink" title="国际化配置文件内容"></a>国际化配置文件内容</h3><p>messages.properties<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ERROR=unknown</span><br><span class="line">SUCCESS=unknown</span><br></pre></td></tr></table></figure></p>
+<p>messages_en.properties<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ERROR=error</span><br><span class="line">SUCCESS=success</span><br></pre></td></tr></table></figure></p>
+<p>messages_de.properties<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ERROR=Fehler</span><br><span class="line">SUCCESS=Erfolg</span><br></pre></td></tr></table></figure></p>
+<p>messages_fr.properties<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ERROR=Échec</span><br><span class="line">SUCCESS=Le succès</span><br></pre></td></tr></table></figure></p>
+<p>messages_zh_TW.properties<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ERROR=失敗（繁體）</span><br><span class="line">SUCCESS=成功（繁體）</span><br></pre></td></tr></table></figure></p>
+<h2 id="Spring-Boot-配置"><a href="#Spring-Boot-配置" class="headerlink" title="Spring Boot 配置"></a>Spring Boot 配置</h2><p>定义一个区域解析器，在应用程序上下文中注册一个 LocaleResolver 类型的区域解析器 Bean，Bean的名称设置为 localeResolver，这样 DispatcherServlet 才能自动侦测到它。  </p>
+<h3 id="方法一"><a href="#方法一" class="headerlink" title="方法一"></a>方法一</h3><p>添加 I18nConfiguration 配置类，使用 Accept-Language Header 区域解析器<br>特点：配置简单，使用方便，推荐使用</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 国际化配置</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@author</span> Leaves</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@version</span> 1.0.0</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@date</span> 2018/8/6</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="meta">@Configuration</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">I18nConfiguration</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * Accept-Language Header 区域解析器</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="meta">@Bean</span>(value = <span class="string">"localeResolver"</span>)</span><br><span class="line">    <span class="function"><span class="keyword">public</span> LocaleResolver <span class="title">acceptHeaderLocaleResolver</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        AcceptHeaderLocaleResolver acceptHeaderLocaleResolver = <span class="keyword">new</span> AcceptHeaderLocaleResolver();</span><br><span class="line">        acceptHeaderLocaleResolver.setDefaultLocale(Locale.US);</span><br><span class="line">        <span class="keyword">return</span> acceptHeaderLocaleResolver;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 加载国际化配置文件资源</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="meta">@Bean</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> ReloadableResourceBundleMessageSource <span class="title">messageSource</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        ReloadableResourceBundleMessageSource messageSource = <span class="keyword">new</span> ReloadableResourceBundleMessageSource();</span><br><span class="line">        <span class="comment">//设置国际化配置文件存放目录</span></span><br><span class="line">        messageSource.setBasename(<span class="string">"classpath:i18n/messages"</span>);</span><br><span class="line">        <span class="comment">//设置加载资源的缓存失效时间，-1表示永久有效，默认为-1</span></span><br><span class="line">        messageSource.setCacheSeconds(-<span class="number">1</span>);</span><br><span class="line">        <span class="comment">//设定 Resource Bundle 编码方式，默认为UTF-8</span></span><br><span class="line">        messageSource.setDefaultEncoding(<span class="string">"UTF-8"</span>);</span><br><span class="line">        <span class="keyword">return</span> messageSource;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="方法二"><a href="#方法二" class="headerlink" title="方法二"></a>方法二</h3><p>使用 SessionLocaleResolver 或 CookieLocaleResolver</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 国际化配置</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@author</span> Leaves</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@version</span> 1.0.0</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@date</span> 2018/8/6</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="meta">@Configuration</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">I18nConfiguration</span> <span class="keyword">extends</span> <span class="title">WebMvcConfigurerAdapter</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * Session 区域解析器</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="meta">@Bean</span>(value = <span class="string">"localeResolver"</span>)</span><br><span class="line">    <span class="function"><span class="keyword">public</span> LocaleResolver <span class="title">sessionLocaleResolver</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        SessionLocaleResolver sessionLocaleResolver = <span class="keyword">new</span> SessionLocaleResolver();</span><br><span class="line">        sessionLocaleResolver.setDefaultLocale(Locale.US);</span><br><span class="line">        <span class="keyword">return</span> sessionLocaleResolver;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 注册 LocaleChangeInterceptor 拦截器，并将其引用到任何需要支持多种语言的处理器映射</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">private</span> LocaleChangeInterceptor <span class="title">localeChangeInterceptor</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        LocaleChangeInterceptor localeChangeInterceptor = <span class="keyword">new</span> LocaleChangeInterceptor();</span><br><span class="line">        localeChangeInterceptor.setParamName(<span class="string">"locale"</span>);</span><br><span class="line">        <span class="keyword">return</span> localeChangeInterceptor;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * LocaleChangeInterceptor 拦截器注册</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">addInterceptors</span><span class="params">(InterceptorRegistry registry)</span> </span>&#123;</span><br><span class="line">        registry.addInterceptor(localeChangeInterceptor());</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 加载国际化配置文件资源</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="meta">@Bean</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> ReloadableResourceBundleMessageSource <span class="title">messageSource</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        ReloadableResourceBundleMessageSource messageSource = <span class="keyword">new</span> ReloadableResourceBundleMessageSource();</span><br><span class="line">        <span class="comment">//设置国际化配置文件存放目录</span></span><br><span class="line">        messageSource.setBasename(<span class="string">"classpath:i18n/messages"</span>);</span><br><span class="line">        <span class="comment">//设置加载资源的缓存失效时间，-1表示永久有效，默认为-1</span></span><br><span class="line">        messageSource.setCacheSeconds(-<span class="number">1</span>);</span><br><span class="line">        <span class="comment">//设定 Resource Bundle 编码方式，默认为UTF-8</span></span><br><span class="line">        messageSource.setDefaultEncoding(<span class="string">"UTF-8"</span>);</span><br><span class="line">        <span class="keyword">return</span> messageSource;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="国际化使用"><a href="#国际化使用" class="headerlink" title="国际化使用"></a>国际化使用</h2><p>Spring Boot 通过以上两步就完成了国际化配置，那怎么使用呢？<br>首先定义一个测试接口<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Autowired</span></span><br><span class="line"><span class="keyword">private</span> MessageSource messageSource;</span><br><span class="line"></span><br><span class="line"><span class="meta">@RequestMapping</span>(value = <span class="string">"/test"</span>, method = RequestMethod.GET)</span><br><span class="line"><span class="function"><span class="keyword">public</span> String <span class="title">languageTest</span><span class="params">(@RequestParam(value = <span class="string">"result"</span>, required = <span class="keyword">false</span>)</span> String result) </span>&#123;</span><br><span class="line">    Locale locale = LocaleContextHolder.getLocale();</span><br><span class="line">    logger.info(locale.toString());</span><br><span class="line">    <span class="keyword">return</span> messageSource.getMessage(result == <span class="keyword">null</span> ? <span class="string">"SUCCESS"</span> : result, <span class="keyword">null</span>, <span class="string">"unknown"</span>, locale);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>LocaleContextHolder.getLocale() 是获取语言的关键方法，通过 MessageSource 的 String getMessage(String var1, Object[] var2, String var3, Locale var4) 接口获取国际化配置文件（messages_xx.properties）中的不同语言内容。</p>
+<h2 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h2><p>接下来我将使用 Postman 工具来进行测试<br>设置语言的关键在于 HTTP Header 上加上 <code>Accept-Language</code> 参数  </p>
+<p>下面是两个国际化方法的几种语言测试结果：  </p>
+<h3 id="方法一测试结果"><a href="#方法一测试结果" class="headerlink" title="方法一测试结果"></a>方法一测试结果</h3><p><img src="https://raw.githubusercontent.com/leaveslm/blog-image/master/blog/2018/8/20180806172556.jpg" alt="avatar"><br><img src="https://raw.githubusercontent.com/leaveslm/blog-image/master/blog/2018/8/20180806172557.jpg" alt="avatar"><br><img src="https://raw.githubusercontent.com/leaveslm/blog-image/master/blog/2018/8/20180806172558.jpg" alt="avatar"><br><img src="https://raw.githubusercontent.com/leaveslm/blog-image/master/blog/2018/8/20180806172559.jpg" alt="avatar"></p>
+<h3 id="方法二测试结果"><a href="#方法二测试结果" class="headerlink" title="方法二测试结果"></a>方法二测试结果</h3><p><img src="https://raw.githubusercontent.com/leaveslm/blog-image/master/blog/2018/8/20180806172601.jpg" alt="avatar"><br><img src="https://raw.githubusercontent.com/leaveslm/blog-image/master/blog/2018/8/20180806172602.jpg" alt="avatar"><br><img src="https://raw.githubusercontent.com/leaveslm/blog-image/master/blog/2018/8/20180806172603.jpg" alt="avatar"><br><img src="https://raw.githubusercontent.com/leaveslm/blog-image/master/blog/2018/8/20180806172604.jpg" alt="avatar"></p>
+<p>到这里，Spring Boot 的国际化就完成了~~</p>
+<h2 id="区域解析器"><a href="#区域解析器" class="headerlink" title="区域解析器"></a>区域解析器</h2><h3 id="AcceptHeaderLocaleResolver"><a href="#AcceptHeaderLocaleResolver" class="headerlink" title="AcceptHeaderLocaleResolver"></a>AcceptHeaderLocaleResolver</h3><p>Spring 采用的默认区域解析器是 AcceptHeaderLocaleResolver。它通过检验 HTTP 请求的 Accept-Language 头部来解析区域。这个头部是由用户的 Web 浏览器根据底层操作系统的区域设置进行设定或者 Web 端设定。</p>
+<h3 id="SessionLocaleResolver"><a href="#SessionLocaleResolver" class="headerlink" title="SessionLocaleResolver"></a>SessionLocaleResolver</h3><p>Session 区域解析器，会从用户请求相关的 Session 中获取本地化信息。如果不存在，它会根据 Accept-Language 头部确定默认区域，只针对当前的会话有效，Session 失效，还原为默认状态。</p>
+<h3 id="CookieLocaleResolver"><a href="#CookieLocaleResolver" class="headerlink" title="CookieLocaleResolver"></a>CookieLocaleResolver</h3><p>Cookie 区域解析器，检查客户端中的 Cookie 是否包含本地化信息，如果有的话就使用。当配置这个解析器的时候，可以指定 Cookie 名，以及 Cookie 的最长生存期。</p>
+<h3 id="FixedLocaleResolver"><a href="#FixedLocaleResolver" class="headerlink" title="FixedLocaleResolver"></a>FixedLocaleResolver</h3><p>固定区域解析器，一直使用固定的 Local, 改变 Local 是不支持的，一旦程序启动时设定，则无法改变 Local。  </p>
+<h3 id="通过-url-中的参数修改语言"><a href="#通过-url-中的参数修改语言" class="headerlink" title="通过 url 中的参数修改语言"></a>通过 url 中的参数修改语言</h3><p>除了显式调用 LocaleResolver.setLocale() 来修改用户的区域之外，还可以将 LocaleChangeInterceptor 拦截器应用到处理程序映射中（如方法二），它会发现当前 HTTP 请求中出现的特殊参数。其中的参数名称可以通过拦截器的 paramName (默认值 <code>locale</code>) 属性进行自定义。如果这种参数出现在当前请求中，拦截器就会根据参数值来改变区域。<br>注：LocaleChangeInterceptor 可以和 SessionLocaleResolver、CookieLocaleResolver 一起使用，但不能和FixedLocaleResolver 一起使用，否则会抛出异常信息。</p>
 
       
     </div>
@@ -629,9 +548,11 @@
       
         <div class="post-tags">
           
-            <a href="/tags/mysql/" rel="tag"># mysql</a>
+            <a href="/tags/java/" rel="tag"># java</a>
           
-            <a href="/tags/linux/" rel="tag"># linux</a>
+            <a href="/tags/spring-boot/" rel="tag"># spring boot</a>
+          
+            <a href="/tags/国际化/" rel="tag"># 国际化</a>
           
         </div>
       
@@ -644,8 +565,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/04/24/2018-2018-04-24-Windows-安装-MySQL-5-7/" rel="next" title="Windows 安装 MySQL 5.7">
-                <i class="fa fa-chevron-left"></i> Windows 安装 MySQL 5.7
+              <a href="/2018/07/31/2018-2018-07-31-断点续传下载文件-多媒体在线播放/" rel="next" title="断点续传下载文件，多媒体在线播放">
+                <i class="fa fa-chevron-left"></i> 断点续传下载文件，多媒体在线播放
               </a>
             
           </div>
@@ -653,10 +574,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/07/25/2018-2018-07-25-Linux-安装-Redis/" rel="prev" title="Linux 安装 Redis">
-                Linux 安装 Redis <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -891,7 +808,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#清理-MySQL、下载解压"><span class="nav-number">1.</span> <span class="nav-text">清理 MySQL、下载解压</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#创建-MySQL-组、用户"><span class="nav-number">2.</span> <span class="nav-text">创建 MySQL 组、用户</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#修改-my-cnf-配置文件"><span class="nav-number">3.</span> <span class="nav-text">修改 my.cnf 配置文件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#初始化-MySQL-数据库"><span class="nav-number">4.</span> <span class="nav-text">初始化 MySQL 数据库</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#启动-MySQL-服务"><span class="nav-number">5.</span> <span class="nav-text">启动 MySQL 服务</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#修改-Root-密码，开启远程访问"><span class="nav-number">6.</span> <span class="nav-text">修改 Root 密码，开启远程访问</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#配置-MySQL-服务开机自动启动"><span class="nav-number">7.</span> <span class="nav-text">配置 MySQL 服务开机自动启动</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#MySQL-服务的启动-重启-停止"><span class="nav-number">8.</span> <span class="nav-text">MySQL 服务的启动/重启/停止</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#定义国际化配置文件"><span class="nav-number">2.</span> <span class="nav-text">定义国际化配置文件</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#国际化配置文件"><span class="nav-number">2.1.</span> <span class="nav-text">国际化配置文件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#国际化配置文件内容"><span class="nav-number">2.2.</span> <span class="nav-text">国际化配置文件内容</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Spring-Boot-配置"><span class="nav-number">3.</span> <span class="nav-text">Spring Boot 配置</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#方法一"><span class="nav-number">3.1.</span> <span class="nav-text">方法一</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#方法二"><span class="nav-number">3.2.</span> <span class="nav-text">方法二</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#国际化使用"><span class="nav-number">4.</span> <span class="nav-text">国际化使用</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#测试"><span class="nav-number">5.</span> <span class="nav-text">测试</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#方法一测试结果"><span class="nav-number">5.1.</span> <span class="nav-text">方法一测试结果</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#方法二测试结果"><span class="nav-number">5.2.</span> <span class="nav-text">方法二测试结果</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#区域解析器"><span class="nav-number">6.</span> <span class="nav-text">区域解析器</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#AcceptHeaderLocaleResolver"><span class="nav-number">6.1.</span> <span class="nav-text">AcceptHeaderLocaleResolver</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#SessionLocaleResolver"><span class="nav-number">6.2.</span> <span class="nav-text">SessionLocaleResolver</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#CookieLocaleResolver"><span class="nav-number">6.3.</span> <span class="nav-text">CookieLocaleResolver</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#FixedLocaleResolver"><span class="nav-number">6.4.</span> <span class="nav-text">FixedLocaleResolver</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#通过-url-中的参数修改语言"><span class="nav-number">6.5.</span> <span class="nav-text">通过 url 中的参数修改语言</span></a></li></ol></li></ol></div>
             
 
           </div>

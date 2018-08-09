@@ -2,6 +2,15 @@
 
 
 
+
+
+
+
+
+
+
+
+
   
 
 
@@ -9,8 +18,11 @@
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2"/>
 <meta name="theme-color" content="#222">
+
+
+
 
 
 
@@ -40,10 +52,6 @@
 
 
 
-  
-  
-  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
-
 
 
 
@@ -52,49 +60,25 @@
 
 <link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
 
-<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+<link href="/css/main.css?v=6.3.0" rel="stylesheet" type="text/css" />
 
 
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=6.3.0">
 
 
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=6.3.0">
 
 
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=6.3.0">
 
 
-  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
-
-
-
-
-
-  <meta name="keywords" content="windows," />
-
-
-
-
-
-  <link rel="alternate" href="/atom.xml" title="Notes For Leaves" type="application/atom+xml" />
+  <link rel="mask-icon" href="/images/logo.svg?v=6.3.0" color="#222">
 
 
 
 
 
 
-<meta name="description" content="用过 Mac、Linux 的用户都会觉得这两个系统的 Terminal 字体相比 Windows 的看起来舒服很多，其实 Windows 控制台字体也是可以更改的，比如更改成等宽字体，下面的是更改方法，可以参考。控制台背景改成白色，字体改成黑色显示效果更佳。推荐一款字体：Menlo字体下载：点击下载   Win+R: regedit，打开注册表编辑器添加字体[HKEY_LOCAL_MACHINE\">
-<meta name="keywords" content="windows">
-<meta property="og:type" content="article">
-<meta property="og:title" content="Windows 10 修改控制台字体">
-<meta property="og:url" content="http://leaveslm.github.io/2017/05/07/2017-2017-05-07-Windows-10-修改控制台字体/index.html">
-<meta property="og:site_name" content="Notes For Leaves">
-<meta property="og:description" content="用过 Mac、Linux 的用户都会觉得这两个系统的 Terminal 字体相比 Windows 的看起来舒服很多，其实 Windows 控制台字体也是可以更改的，比如更改成等宽字体，下面的是更改方法，可以参考。控制台背景改成白色，字体改成黑色显示效果更佳。推荐一款字体：Menlo字体下载：点击下载   Win+R: regedit，打开注册表编辑器添加字体[HKEY_LOCAL_MACHINE\">
-<meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2018-07-25T09:51:29.748Z">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Windows 10 修改控制台字体">
-<meta name="twitter:description" content="用过 Mac、Linux 的用户都会觉得这两个系统的 Terminal 字体相比 Windows 的看起来舒服很多，其实 Windows 控制台字体也是可以更改的，比如更改成等宽字体，下面的是更改方法，可以参考。控制台背景改成白色，字体改成黑色显示效果更佳。推荐一款字体：Menlo字体下载：点击下载   Win+R: regedit，打开注册表编辑器添加字体[HKEY_LOCAL_MACHINE\">
 
 
 
@@ -103,15 +87,13 @@
   var CONFIG = {
     root: '/',
     scheme: 'Muse',
-    version: '5.1.4',
+    version: '6.3.0',
     sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":true},
-    fancybox: true,
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
     tabs: true,
     motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
-    duoshuo: {
-      userId: '0',
-      author: 'Author'
-    },
     algolia: {
       applicationID: '',
       apiKey: '',
@@ -123,12 +105,40 @@
 </script>
 
 
+  
+
+
+
+
+  <meta name="description" content="用过 Mac、Linux 的用户都会觉得这两个系统的 Terminal 字体相比 Windows 的看起来舒服很多，其实 Windows 控制台字体也是可以更改的，比如更改成等宽字体，下面的是更改方法，可以参考。控制台背景改成白色，字体改成黑色显示效果更佳。推荐一款字体：Menlo字体下载：点击下载   Win+R: regedit，打开注册表编辑器添加字体[HKEY_LOCAL_MACHINE\">
+<meta name="keywords" content="windows">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Windows 10 修改控制台字体">
+<meta property="og:url" content="http://leaveslm.github.io/2017/05/07/2017-2017-05-07-Windows-10-修改控制台字体/index.html">
+<meta property="og:site_name" content="Notes For Leaves">
+<meta property="og:description" content="用过 Mac、Linux 的用户都会觉得这两个系统的 Terminal 字体相比 Windows 的看起来舒服很多，其实 Windows 控制台字体也是可以更改的，比如更改成等宽字体，下面的是更改方法，可以参考。控制台背景改成白色，字体改成黑色显示效果更佳。推荐一款字体：Menlo字体下载：点击下载   Win+R: regedit，打开注册表编辑器添加字体[HKEY_LOCAL_MACHINE\">
+<meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2018-08-08T01:56:07.494Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Windows 10 修改控制台字体">
+<meta name="twitter:description" content="用过 Mac、Linux 的用户都会觉得这两个系统的 Terminal 字体相比 Windows 的看起来舒服很多，其实 Windows 控制台字体也是可以更改的，比如更改成等宽字体，下面的是更改方法，可以参考。控制台背景改成白色，字体改成黑色显示效果更佳。推荐一款字体：Menlo字体下载：点击下载   Win+R: regedit，打开注册表编辑器添加字体[HKEY_LOCAL_MACHINE\">
+
+
+
+  <link rel="alternate" href="/atom.xml" title="Notes For Leaves" type="application/atom+xml" />
+
+
+
 
   <link rel="canonical" href="http://leaveslm.github.io/2017/05/07/2017-2017-05-07-Windows-10-修改控制台字体/"/>
 
 
 
-
+<script type="text/javascript" id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
 
   <title>Windows 10 修改控制台字体 | Notes For Leaves</title>
   
@@ -139,6 +149,34 @@
 
 
 
+
+
+  <noscript>
+  <style type="text/css">
+    .use-motion .motion-element,
+    .use-motion .brand,
+    .use-motion .menu-item,
+    .sidebar-inner,
+    .use-motion .post-block,
+    .use-motion .pagination,
+    .use-motion .comments,
+    .use-motion .post-header,
+    .use-motion .post-body,
+    .use-motion .collection-title { opacity: initial; }
+
+    .use-motion .logo,
+    .use-motion .site-title,
+    .use-motion .site-subtitle {
+      opacity: initial;
+      top: initial;
+    }
+
+    .use-motion {
+      .logo-line-before i { left: initial; }
+      .logo-line-after i { right: initial; }
+    }
+  </style>
+</noscript>
 
 </head>
 
@@ -158,19 +196,21 @@
     
 
     <div class="custom-logo-site-title">
-      <a href="/"  class="brand" rel="start">
+      <a href="/" class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
         <span class="site-title">Notes For Leaves</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
+    
       
         <p class="site-subtitle">a Java developer's story</p>
       
+    
   </div>
 
   <div class="site-nav-toggle">
-    <button>
+    <button aria-label="Toggle navigation bar">
       <span class="btn-bar"></span>
       <span class="btn-bar"></span>
       <span class="btn-bar"></span>
@@ -178,66 +218,61 @@
   </div>
 </div>
 
-<nav class="site-nav">
-  
 
+
+<nav class="site-nav">
   
     <ul id="menu" class="menu">
       
         
-        <li class="menu-item menu-item-home">
-          <a href="/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
-            
-            Home
-          </a>
-        </li>
-      
         
-        <li class="menu-item menu-item-tags">
-          <a href="/tags/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
-            
-            Tags
-          </a>
-        </li>
-      
         
-        <li class="menu-item menu-item-categories">
-          <a href="/categories/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
-            
-            Categories
-          </a>
-        </li>
-      
+          
+          <li class="menu-item menu-item-home">
+    <a href="/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-home"></i> <br />Home</a>
+  </li>
         
-        <li class="menu-item menu-item-archives">
-          <a href="/archives/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
-            
-            Archives
-          </a>
-        </li>
-      
+        
+        
+          
+          <li class="menu-item menu-item-tags">
+    <a href="/tags/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />Tags</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-categories">
+    <a href="/categories/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-th"></i> <br />Categories</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-archives">
+    <a href="/archives/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />Archives</a>
+  </li>
 
+      
       
         <li class="menu-item menu-item-search">
           
             <a href="javascript:;" class="popup-trigger">
           
             
-              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
-            
-            Search
-          </a>
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />Search</a>
         </li>
       
     </ul>
+  
+
+  
+    
+
   
 
   
@@ -268,12 +303,20 @@
 
 
 
- </div>
+  
+
+
+
+</div>
     </header>
+
+    
+
 
     <main id="main" class="main">
       <div class="main-inner">
         <div class="content-wrap">
+          
           <div id="content" class="content">
             
 
@@ -286,6 +329,8 @@
   
   
 
+  
+
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
   
   
@@ -295,7 +340,7 @@
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Leaves">
-      <meta itemprop="description" content="">
+      <meta itemprop="description" content="既然来了，那就花几分钟看一下吧">
       <meta itemprop="image" content="/uploads/avatar.jpg">
     </span>
 
@@ -308,11 +353,19 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Windows 10 修改控制台字体</h1>
+          <h1 class="post-title" itemprop="name headline">Windows 10 修改控制台字体
+              
+            
+          </h1>
         
 
         <div class="post-meta">
           <span class="post-time">
+
+            
+            
+            
+
             
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
@@ -320,13 +373,30 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-05-07T00:12:43+08:00">
-                2017-05-07
-              </time>
+
+              
+                
+              
+
+              <time title="Created: 2017-05-07 00:12:43" itemprop="dateCreated datePublished" datetime="2017-05-07T00:12:43+08:00">2017-05-07</time>
             
 
             
+              
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2018-08-08 09:56:07" itemprop="dateModified" datetime="2018-08-08T09:56:07+08:00">2018-08-08</time>
+              
             
           </span>
 
@@ -342,11 +412,7 @@
                 <span class="post-meta-item-text">In</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/DIY/" itemprop="url" rel="index">
-                    <span itemprop="name">DIY</span>
-                  </a>
-                </span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/DIY/" itemprop="url" rel="index"><span itemprop="name">DIY</span></a></span>
 
                 
                 
@@ -363,7 +429,10 @@
 
           
             <span class="post-meta-divider">|</span>
-            <span class="page-pv"><i class="fa fa-file-o"></i>
+            <span class="post-meta-item-icon"
+            >
+            <i class="fa fa-file"></i>
+             Views:  
             <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>
             </span>
           
@@ -391,7 +460,7 @@
 <p>【注】十六进制”000003a8”或十进制”936”，表示“936 (ANSI/OEM - 简体中文 GBK)”</p>
 <p>————————————– END ————————————–</p>
 <h2 id="附-chcp详解"><a href="#附-chcp详解" class="headerlink" title="附: chcp详解"></a>附: chcp详解</h2><h3 id="功能说明"><a href="#功能说明" class="headerlink" title="功能说明"></a>功能说明</h3><p>显示活动控制台代码页数量，或更改该控制台的活动控制台代码页。如果在没有参数的情况下使用，则 chcp 显示活动控制台代码页的数量。</p>
-<h3 id="补充说明"><a href="#补充说明" class="headerlink" title="补充说明"></a>补充说明</h3><p>只有随 XOX 一起安装的原始设备制造商 (OEM) 代码页才能在使用 Raster 字体的命令提示符窗口中正常显示。其他代码页则可在全屏幕模式下或者在使用 TrueType 字体的命令提示符窗口中正确显示。 就像在 MS-DOS 中一样，您不必准备代码页。 在指派了新代码页之后启动的程序将使用该新代码页，但如果程序（除了 Cmd.exe）是在指派新代码页之前启动的，那么该程序将使用原来的代码页。</p>
+<h3 id="补充说明"><a href="#补充说明" class="headerlink" title="补充说明"></a>补充说明</h3><p>只有随 XOX 一起安装的原始设备制造商 (OEM) 代码页才能在使用 Raster 字体的命令提示符窗口中正常显示。其他代码页则可在全屏幕模式下或者在使用 TrueType 字体的命令提示符窗口中正确显示。 就像在 MS-DOS 中一样，您不必准备代码页。 在指派了新代码页之后启动的程序将使用该新代码页，但如果程序（除了 cmd.exe）是在指派新代码页之前启动的，那么该程序将使用原来的代码页。</p>
 <p>语法<br>chcp [NNN] </p>
 <p>参数<br>NNN 指定代码页。下表列出了MSDOS所有支持的代码页及其国家（地区）或者语言：<br>代码页        国家（地区）或语言<br>437          美国<br>850          多语言（拉丁文 I）<br>852          斯拉夫语（拉丁文 II）<br>855          西里尔文（俄语）<br>857          土耳其语<br>860          葡萄牙语<br>861          冰岛语<br>863          加拿大 - 法语<br>865          日耳曼语<br>866          俄语<br>869          现代希腊语<br>936          简体中文<br>950          繁体中文<br>65001        UTF-8  </p>
 <p>/? 在命令提示符下显示帮助。</p>
@@ -403,6 +472,9 @@
 
       
     </div>
+
+    
+
     
     
     
@@ -483,17 +555,10 @@
   </article>
 
 
-
-    <div class="post-spread">
-      
-    </div>
   </div>
 
 
           </div>
-          
-
-
           
 
   
@@ -548,42 +613,78 @@
               <p class="site-description motion-element" itemprop="description">既然来了，那就花几分钟看一下吧</p>
           </div>
 
-          <nav class="site-state motion-element">
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">8</span>
+                    <span class="site-state-item-name">posts</span>
+                  </a>
+                </div>
+              
 
-            
-              <div class="site-state-item site-state-posts">
               
-                <a href="/archives/">
+                
+                
+                <div class="site-state-item site-state-categories">
+                  <a href="/categories/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">4</span>
+                    <span class="site-state-item-name">categories</span>
+                  </a>
+                </div>
               
-                  <span class="site-state-item-count">7</span>
-                  <span class="site-state-item-name">posts</span>
-                </a>
-              </div>
-            
 
-            
               
+                
+                
+                <div class="site-state-item site-state-tags">
+                  <a href="/tags/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">10</span>
+                    <span class="site-state-item-name">tags</span>
+                  </a>
+                </div>
               
-              <div class="site-state-item site-state-categories">
-                <a href="/categories/index.html">
-                  <span class="site-state-item-count">5</span>
-                  <span class="site-state-item-name">categories</span>
-                </a>
-              </div>
-            
-
-            
-              
-              
-              <div class="site-state-item site-state-tags">
-                <a href="/tags/index.html">
-                  <span class="site-state-item-count">11</span>
-                  <span class="site-state-item-name">tags</span>
-                </a>
-              </div>
-            
-
-          </nav>
+            </nav>
+          
 
           
             <div class="feed-link motion-element">
@@ -596,25 +697,22 @@
 
           
             <div class="links-of-author motion-element">
-                
-                  <span class="links-of-author-item">
-                    <a href="mailto:leaveslm@gmail.com" target="_blank" title="E-Mail">
-                      
-                        <i class="fa fa-fw fa-envelope"></i>E-Mail</a>
-                  </span>
-                
-                  <span class="links-of-author-item">
-                    <a href="https://github.com/leaveslm" target="_blank" title="GitHub">
-                      
-                        <i class="fa fa-fw fa-github"></i>GitHub</a>
-                  </span>
-                
-                  <span class="links-of-author-item">
-                    <a href="https://weibo.com/u/3982141554" target="_blank" title="微博">
-                      
-                        <i class="fa fa-fw fa-weibo"></i>微博</a>
-                  </span>
-                
+              
+                <span class="links-of-author-item">
+                  <a href="mailto:leaveslm@gmail.com" target="_blank" title="E-Mail"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                  
+                </span>
+              
+                <span class="links-of-author-item">
+                  <a href="https://github.com/leaveslm" target="_blank" title="GitHub"><i class="fa fa-fw fa-github"></i>GitHub</a>
+                  
+                </span>
+              
+                <span class="links-of-author-item">
+                  <a href="https://weibo.com/u/3982141554" target="_blank" title="微博"><i class="fa fa-fw fa-weibo"></i>微博</a>
+                  
+                </span>
+              
             </div>
           
 
@@ -623,7 +721,44 @@
 
           
           
+            <div class="links-of-blogroll motion-element links-of-blogroll-block">
+              <div class="links-of-blogroll-title">
+                <i class="fa  fa-fw fa-link"></i>
+                Links
+              </div>
+              <ul class="links-of-blogroll-list">
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://jm.taobao.org/" title="Alibaba_jm" target="_blank">Alibaba_jm</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://blog.didispace.com/" title="didispace" target="_blank">didispace</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://www.ityouknow.com/" title="ityouknow" target="_blank">ityouknow</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://www.cnblogs.com/f-ck-need-u/" title="骏马金龙" target="_blank">骏马金龙</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://jasoncui.com/" title="jasoncui" target="_blank">jasoncui</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://itmuch.com/" title="itmuch" target="_blank">itmuch</a>
+                  </li>
+                
+              </ul>
+            </div>
+          
 
+          
+            
+          
           
 
         </div>
@@ -659,14 +794,18 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; 2017 &mdash; <span itemprop="copyrightYear">2018</span>
-  <span class="with-love">
+        <div class="copyright">&copy; 2017 – <span itemprop="copyrightYear">2018</span>
+  <span class="with-love" id="animate">
     <i class="fa fa-user"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">Leaves</span>
 
   
+
+  
 </div>
+
+
 
 
   <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
@@ -683,21 +822,20 @@
   <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 
   
-    <span class="site-uv">
+    <span class="site-uv" title="Total Visitors">
       <i class="fa fa-user"></i>
       <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
-      
     </span>
   
 
   
-    <span class="site-pv">
+    <span class="site-pv" title="Total Views">
       <i class="fa fa-eye"></i>
       <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
-      
     </span>
   
 </div>
+
 
 
 
@@ -718,13 +856,10 @@
     
 
     
-      <div id="needsharebutton-float">
-        <span class="btn">
-          <i class="fa fa-share-alt" aria-hidden="true"></i>
-        </span>
-      </div>
+	
     
 
+    
   </div>
 
   
@@ -743,7 +878,11 @@
 
 
 
-  
+
+
+
+
+
 
 
 
@@ -763,16 +902,6 @@
 
   
   
-    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
-  
-
-  
-  
     <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
   
 
@@ -781,18 +910,13 @@
     <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
   
 
-  
-  
-    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
-  
-
 
   
 
 
-  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+  <script type="text/javascript" src="/js/src/utils.js?v=6.3.0"></script>
 
-  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+  <script type="text/javascript" src="/js/src/motion.js?v=6.3.0"></script>
 
 
 
@@ -800,35 +924,19 @@
   
 
   
-  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
-<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=6.3.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=6.3.0"></script>
 
 
 
   
 
 
-  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=6.3.0"></script>
 
 
 
   
-
-
-  
-
-
-
-
-	
-
-
-
-
-
-  
-
-
 
 
 
@@ -844,8 +952,6 @@
       })(document, 'script');
     </script>
   
-
-
 
 
 
@@ -907,6 +1013,8 @@
         .css('overflow', 'hidden');
       $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
 
+      
+
       $.ajax({
         url: path,
         dataType: isXml ? "xml" : "json",
@@ -940,6 +1048,7 @@
                 var title = data.title.trim();
                 var titleInLowerCase = title.toLowerCase();
                 var content = data.content.trim().replace(/<[^>]+>/g,"");
+                
                 var contentInLowerCase = content.toLowerCase();
                 var articleUrl = decodeURIComponent(data.url);
                 var indexOfTitle = [];
@@ -1202,40 +1311,97 @@
 
   
   
-  
-  <link rel="stylesheet" href="/lib/needsharebutton/needsharebutton.css">
 
   
   
-  <script src="/lib/needsharebutton/needsharebutton.js"></script>
 
+  
+
+
+  
+  
+
+  
+
+  
+  <script type="text/javascript" src="/js/src/js.cookie.js?v=6.3.0"></script>
+  <script type="text/javascript" src="/js/src/scroll-cookie.js?v=6.3.0"></script>
+
+
+  
+
+  
+
+  
+  <style>
+    .copy-btn {
+      display: inline-block;
+      padding: 6px 12px;
+      font-size: 13px;
+      font-weight: 700;
+      line-height: 20px;
+      color: #333;
+      white-space: nowrap;
+      vertical-align: middle;
+      cursor: pointer;
+      background-color: #eee;
+      background-image: linear-gradient(#fcfcfc, #eee);
+      border: 1px solid #d5d5d5;
+      border-radius: 3px;
+      user-select: none;
+      outline: 0;
+    }
+
+    .highlight-wrap .copy-btn {
+      transition: opacity .3s ease-in-out;
+      opacity: 0;
+      padding: 2px 6px;
+      position: absolute;
+      right: 4px;
+      top: 8px;
+    }
+
+    .highlight-wrap:hover .copy-btn,
+    .highlight-wrap .copy-btn:focus {
+      opacity: 1
+    }
+
+    .highlight-wrap {
+      position: relative;
+    }
+  </style>
   <script>
-    
-    
-      flOptions = {};
-      
-          flOptions.iconStyle = "default";
-      
-          flOptions.boxForm = "horizontal";
-      
-          flOptions.position = "middleRight";
-      
-          flOptions.networks = "Weibo,Wechat,Douban,QQZone,Twitter,Facebook";
-      
-      new needShareButton('#needsharebutton-float', flOptions);
-    
+    $('.highlight').each(function (i, e) {
+      var $wrap = $('<div>').addClass('highlight-wrap')
+      $(e).after($wrap)
+      $wrap.append($('<button>').addClass('copy-btn').append('Copy').on('click', function (e) {
+        var code = $(this).parent().find('.code').find('.line').map(function (i, e) {
+          return $(e).text()
+        }).toArray().join('\n')
+        var ta = document.createElement('textarea')
+        document.body.appendChild(ta)
+        ta.style.position = 'absolute'
+        ta.style.top = '0px'
+        ta.style.left = '0px'
+        ta.value = code
+        ta.select()
+        ta.focus()
+        var result = document.execCommand('copy')
+        document.body.removeChild(ta)
+        
+          if(result)$(this).text('Copied')
+          else $(this).text('Copy failed')
+        
+        $(this).blur()
+      })).on('mouseleave', function (e) {
+        var $b = $(this).find('.copy-btn')
+        setTimeout(function () {
+          $b.text('Copy')
+        }, 300)
+      }).append(e)
+    })
   </script>
 
-  
-
-  
-
-  
-  <script type="text/javascript" src="/js/src/js.cookie.js?v=5.1.4"></script>
-  <script type="text/javascript" src="/js/src/scroll-cookie.js?v=5.1.4"></script>
-
-
-  
 
 </body>
 </html>
