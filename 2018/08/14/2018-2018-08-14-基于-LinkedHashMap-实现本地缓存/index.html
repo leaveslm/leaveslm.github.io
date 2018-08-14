@@ -110,17 +110,18 @@
 
 
 
-  <meta name="description" content="既然来了，那就花几分钟看一下吧">
-<meta name="keywords" content="Java">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Notes For Leaves">
-<meta property="og:url" content="http://leaveslm.github.io/tags/gps/index.html">
+  <meta name="description" content="缓存缓存是一种提高应用程序性能的简单方法，应用程序从磁盘或数据库表中读取数据，但可能会多次重新读取相同的数据。大量的IO操作必然会导致应用程序性能降低，解决这个问题的简单办法就是，数据使用后一段时间内不丢弃，将其保存在内存中，以便减少不必要的IO操作。 LRU 缓存LRU (Least Recently Used)，即最久未使用算法。LRU 缓存就是选择最长时间未被使用的数据移除。 FIFO 缓存">
+<meta name="keywords" content="java,缓存">
+<meta property="og:type" content="article">
+<meta property="og:title" content="基于 LinkedHashMap 实现本地缓存">
+<meta property="og:url" content="http://leaveslm.github.io/2018/08/14/2018-2018-08-14-基于-LinkedHashMap-实现本地缓存/index.html">
 <meta property="og:site_name" content="Notes For Leaves">
-<meta property="og:description" content="既然来了，那就花几分钟看一下吧">
+<meta property="og:description" content="缓存缓存是一种提高应用程序性能的简单方法，应用程序从磁盘或数据库表中读取数据，但可能会多次重新读取相同的数据。大量的IO操作必然会导致应用程序性能降低，解决这个问题的简单办法就是，数据使用后一段时间内不丢弃，将其保存在内存中，以便减少不必要的IO操作。 LRU 缓存LRU (Least Recently Used)，即最久未使用算法。LRU 缓存就是选择最长时间未被使用的数据移除。 FIFO 缓存">
 <meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2018-08-14T06:26:00.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Notes For Leaves">
-<meta name="twitter:description" content="既然来了，那就花几分钟看一下吧">
+<meta name="twitter:title" content="基于 LinkedHashMap 实现本地缓存">
+<meta name="twitter:description" content="缓存缓存是一种提高应用程序性能的简单方法，应用程序从磁盘或数据库表中读取数据，但可能会多次重新读取相同的数据。大量的IO操作必然会导致应用程序性能降低，解决这个问题的简单办法就是，数据使用后一段时间内不丢弃，将其保存在内存中，以便减少不必要的IO操作。 LRU 缓存LRU (Least Recently Used)，即最久未使用算法。LRU 缓存就是选择最长时间未被使用的数据移除。 FIFO 缓存">
 
 
 
@@ -129,7 +130,7 @@
 
 
 
-  <link rel="canonical" href="http://leaveslm.github.io/tags/gps/"/>
+  <link rel="canonical" href="http://leaveslm.github.io/2018/08/14/2018-2018-08-14-基于-LinkedHashMap-实现本地缓存/"/>
 
 
 
@@ -139,7 +140,7 @@
   };
 </script>
 
-  <title>Tag: gps | Notes For Leaves</title>
+  <title>基于 LinkedHashMap 实现本地缓存 | Notes For Leaves</title>
   
 
 
@@ -186,7 +187,7 @@
     
   
 
-  <div class="container sidebar-position-left ">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -235,7 +236,7 @@
         
         
           
-          <li class="menu-item menu-item-tags menu-item-active">
+          <li class="menu-item menu-item-tags">
     <a href="/tags/" rel="section">
       <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />Tags</a>
   </li>
@@ -271,25 +272,6 @@
 
   
     
-
-    
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-    
-
-  
-
 
   
 
@@ -338,58 +320,236 @@
           <div id="content" class="content">
             
 
-  
-  
-  
-  <div class="post-block tag">
+  <div id="posts" class="posts-expand">
+    
 
-    <div id="posts" class="posts-collapse">
-      <div class="collection-title">
-        <h1>gps<small>Tag</small>
-        </h1>
-      </div>
+  
 
-      
-        
+  
+  
+  
+
+  
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://leaveslm.github.io/2018/08/14/2018-2018-08-14-基于-LinkedHashMap-实现本地缓存/">
 
-      <h2 class="post-title">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Leaves">
+      <meta itemprop="description" content="既然来了，那就花几分钟看一下吧">
+      <meta itemprop="image" content="/uploads/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Notes For Leaves">
+    </span>
+
+    
+      <header class="post-header">
+
         
-            <a class="post-title-link" href="/2017/09/24/2017-2017-09-24-地图坐标转换/" itemprop="url">
-              
-                <span itemprop="name">地图坐标转换</span>
-              
-            </a>
         
-      </h2>
+          <h1 class="post-title" itemprop="name headline">基于 LinkedHashMap 实现本地缓存
+              
+            
+          </h1>
+        
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-09-24T15:32:06+08:00"
-              content="2017-09-24" >
-          09-24
-        </time>
-      </div>
+        <div class="post-meta">
+          <span class="post-time">
 
-    </header>
-  </article>
+            
+            
+            
 
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+
+              
+                
+              
+
+              <time title="Created: 2018-08-14 14:26:00" itemprop="dateCreated datePublished" datetime="2018-08-14T14:26:00+08:00">2018-08-14</time>
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/缓存/" itemprop="url" rel="index"><span itemprop="name">缓存</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="post-meta-item-icon"
+            >
+            <i class="fa fa-file"></i>
+             Views:  
+            <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>
+            </span>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h2 id="缓存"><a href="#缓存" class="headerlink" title="缓存"></a>缓存</h2><p>缓存是一种提高应用程序性能的简单方法，应用程序从磁盘或数据库表中读取数据，但可能会多次重新读取相同的数据。大量的IO操作必然会导致应用程序性能降低，解决这个问题的简单办法就是，数据使用后一段时间内不丢弃，将其保存在内存中，以便减少不必要的IO操作。</p>
+<h2 id="LRU-缓存"><a href="#LRU-缓存" class="headerlink" title="LRU 缓存"></a>LRU 缓存</h2><p>LRU (Least Recently Used)，即最久未使用算法。LRU 缓存就是选择最长时间未被使用的数据移除。</p>
+<h2 id="FIFO-缓存"><a href="#FIFO-缓存" class="headerlink" title="FIFO 缓存"></a>FIFO 缓存</h2><p>FIFO (First In First Out)，即先进先出算法。FIFO 缓存就是选择最先调入缓存数据进行替换。</p>
+<h2 id="基于-LinkedHashMap-的缓存"><a href="#基于-LinkedHashMap-的缓存" class="headerlink" title="基于 LinkedHashMap 的缓存"></a>基于 LinkedHashMap 的缓存</h2><p>对一个 Cache 来说最常用的操作有三种：插入 (insert)、替换 (replace)、查找(lookup)。<br>同时缓存能够自动丢弃一段时间未访问的数据，以限制缓存空间的无限增长。<br>java.util.LinkedHashMap 已经实现了顺序存储，默认情况下按照元素的添加顺序存储，也可以启用按照访问顺序存储，即最近读取的数据放在最前面，最早读取的数据放在最后面，同时它包括自动删除数据的方法（如下），该方法能够让我们不用关心缓存的清除。<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">protected</span> <span class="keyword">boolean</span> <span class="title">removeEldestEntry</span><span class="params">(Map.Entry&lt;K,V&gt; eldest)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">false</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>LinkedHashMap 构造函数如下：<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="title">LinkedHashMap</span><span class="params">(<span class="keyword">int</span> initialCapacity, <span class="keyword">float</span> loadFactor, <span class="keyword">boolean</span> accessOrder)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">super</span>(initialCapacity, loadFactor);</span><br><span class="line">    <span class="keyword">this</span>.accessOrder = accessOrder;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>LinkedHashMap 元素大于 capacity * loadFactor 的时候，就会自动进行两倍扩容，为使缓存大小不会进行自动扩容，初始化大小（initialCapacity）设置为 (CACHE_SIZE / loadFactor) + 1。<br>负载因子（loadFactor）选择默认值 0.75。<br>当参数 accessOrder 为 true 时，即会按照访问顺序排序，最近访问的放在最前，最早访问的放在后面；当参数 accessOrder 为 false 时，即可实现先进先出。</p>
+<p>下面是 LRU 缓存和 FIFO 缓存的实现方式，在公共方法上要加上 synchronized 关键字，防止线程同步问题：<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.LinkedHashMap;</span><br><span class="line"><span class="keyword">import</span> java.util.Map;</span><br><span class="line"><span class="keyword">import</span> java.util.Set;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 原生 Java 本地 LRU、FIFO 缓存，LinkedHashMap 实现</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@author</span> Leaves</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@version</span> 1.0.0</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@date</span> 2018/8/10</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">LinkedHashMapCache</span>&lt;<span class="title">K</span>, <span class="title">V</span>&gt; </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">final</span> <span class="keyword">int</span> CACHE_SIZE;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">final</span> <span class="keyword">float</span> LOAD_FACTORY = <span class="number">0.75f</span>;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">private</span> LinkedHashMap&lt;K, V&gt; map;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> cacheSize   缓存大小</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> accessOrder true LRU, false FIFO</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">LinkedHashMapCache</span><span class="params">(<span class="keyword">int</span> cacheSize, <span class="keyword">boolean</span> accessOrder)</span> </span>&#123;</span><br><span class="line">        CACHE_SIZE = cacheSize;</span><br><span class="line"></span><br><span class="line">        <span class="comment">//LinkedHashMap 元素大于 capacity * loadFactor 的时候，就会自动进行两倍扩容</span></span><br><span class="line">        <span class="comment">//为使缓存大小不会进行自动扩容，初始化大小设置为 (CACHE_SIZE / loadFactor) + 1</span></span><br><span class="line">        <span class="keyword">int</span> initialCapacity = (<span class="keyword">int</span>) Math.ceil(CACHE_SIZE / LOAD_FACTORY) + <span class="number">1</span>;</span><br><span class="line">        map = <span class="keyword">new</span> LinkedHashMap&lt;K, V&gt;(initialCapacity, LOAD_FACTORY, accessOrder) &#123;</span><br><span class="line">            <span class="meta">@Override</span></span><br><span class="line">            <span class="function"><span class="keyword">protected</span> <span class="keyword">boolean</span> <span class="title">removeEldestEntry</span><span class="params">(Map.Entry eldest)</span> </span>&#123;</span><br><span class="line">                <span class="keyword">return</span> size() &gt; CACHE_SIZE;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">synchronized</span> <span class="keyword">void</span> <span class="title">put</span><span class="params">(K key, V value)</span> </span>&#123;</span><br><span class="line">        map.put(key, value);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">synchronized</span> V <span class="title">get</span><span class="params">(K key)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> map.get(key);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">synchronized</span> <span class="keyword">void</span> <span class="title">clear</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        map.clear();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">synchronized</span> <span class="keyword">int</span> <span class="title">size</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> map.size();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">synchronized</span> <span class="keyword">void</span> <span class="title">remove</span><span class="params">(K key)</span> </span>&#123;</span><br><span class="line">        map.remove(key);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">synchronized</span> Set&lt;Map.Entry&lt;K, V&gt;&gt; getAll() &#123;</span><br><span class="line">        <span class="keyword">return</span> map.entrySet();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> String <span class="title">toString</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        StringBuilder stringBuilder = <span class="keyword">new</span> StringBuilder();</span><br><span class="line">        <span class="keyword">for</span> (Map.Entry&lt;K, V&gt; entry : map.entrySet()) &#123;</span><br><span class="line">            stringBuilder.append(String.format(<span class="string">"%s -&gt; %s\n"</span>, entry.getKey(), entry.getValue()));</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> stringBuilder.toString();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        System.out.println(<span class="string">"========== LRU =========="</span>);</span><br><span class="line">        Long start1 = System.currentTimeMillis();</span><br><span class="line">        LinkedHashMapCache&lt;Integer, String&gt; lru = <span class="keyword">new</span> LinkedHashMapCache&lt;&gt;(<span class="number">5</span>, <span class="keyword">true</span>);</span><br><span class="line">        lru.put(<span class="number">1</span>, <span class="string">"1"</span>);</span><br><span class="line">        lru.put(<span class="number">2</span>, <span class="string">"1"</span>);</span><br><span class="line">        lru.put(<span class="number">3</span>, <span class="string">"1"</span>);</span><br><span class="line">        lru.put(<span class="number">4</span>, <span class="string">"1"</span>);</span><br><span class="line">        lru.put(<span class="number">5</span>, <span class="string">"1"</span>);</span><br><span class="line">        System.out.println(lru.toString());</span><br><span class="line">        lru.put(<span class="number">11</span>, <span class="string">"2"</span>);</span><br><span class="line">        lru.get(<span class="number">2</span>);</span><br><span class="line">        lru.put(<span class="number">12</span>, <span class="string">"3"</span>);</span><br><span class="line">        lru.get(<span class="number">4</span>);</span><br><span class="line">        System.out.println(lru.toString());</span><br><span class="line">        System.out.println(System.currentTimeMillis() - start1);</span><br><span class="line"></span><br><span class="line">        System.out.println(<span class="string">"========== FIFO =========="</span>);</span><br><span class="line">        Long start2 = System.currentTimeMillis();</span><br><span class="line">        LinkedHashMapCache&lt;Integer, String&gt; fifo = <span class="keyword">new</span> LinkedHashMapCache&lt;&gt;(<span class="number">5</span>, <span class="keyword">false</span>);</span><br><span class="line">        fifo.put(<span class="number">1</span>, <span class="string">"1"</span>);</span><br><span class="line">        fifo.put(<span class="number">2</span>, <span class="string">"1"</span>);</span><br><span class="line">        fifo.put(<span class="number">3</span>, <span class="string">"1"</span>);</span><br><span class="line">        fifo.put(<span class="number">4</span>, <span class="string">"1"</span>);</span><br><span class="line">        fifo.put(<span class="number">5</span>, <span class="string">"1"</span>);</span><br><span class="line">        System.out.println(fifo.toString());</span><br><span class="line">        fifo.put(<span class="number">11</span>, <span class="string">"2"</span>);</span><br><span class="line">        fifo.get(<span class="number">2</span>);</span><br><span class="line">        fifo.put(<span class="number">12</span>, <span class="string">"3"</span>);</span><br><span class="line">        fifo.get(<span class="number">4</span>);</span><br><span class="line">        System.out.println(fifo.toString());</span><br><span class="line">        System.out.println(System.currentTimeMillis() - start2);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h2 id="参考与感谢"><a href="#参考与感谢" class="headerlink" title="参考与感谢"></a>参考与感谢</h2><blockquote>
+<p><a href="http://java-planet.blogspot.com/2005/08/how-to-set-up-simple-lru-cache-using.html" target="_blank" rel="noopener">Pete Ford : How to set up a simple LRU cache using LinkedHashMap</a></p>
+</blockquote>
 
       
     </div>
 
+    
+
+    
+    
+    
+
+    
+
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div>If these articles are helpful to you, you can donate comment here.</div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>Donate</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="/uploads/wechatpay.jpg" alt="Leaves WeChat Pay"/>
+        <p>WeChat Pay</p>
+      </div>
+    
+
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="/uploads/alipay.jpg" alt="Leaves Alipay"/>
+        <p>Alipay</p>
+      </div>
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/java/" rel="tag"># java</a>
+          
+            <a href="/tags/缓存/" rel="tag"># 缓存</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/08/06/2018-2018-08-06-Spring-Boot-国际化/" rel="next" title="Spring Boot 国际化">
+                <i class="fa fa-chevron-left"></i> Spring Boot 国际化
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </div>
   
   
   
+  </article>
 
-  
+
+  </div>
 
 
           </div>
           
+
+  
+    <div class="comments" id="comments">
+      <div id="lv-container" data-id="city" data-uid="MTAyMC8zODIxMy8xNDc0MQ=="></div>
+    </div>
+
+  
+
+
 
         </div>
         
@@ -412,8 +572,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -583,6 +752,22 @@
       </section>
 
       
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#缓存"><span class="nav-number">1.</span> <span class="nav-text">缓存</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#LRU-缓存"><span class="nav-number">2.</span> <span class="nav-text">LRU 缓存</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#FIFO-缓存"><span class="nav-number">3.</span> <span class="nav-text">FIFO 缓存</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#基于-LinkedHashMap-的缓存"><span class="nav-number">4.</span> <span class="nav-text">基于 LinkedHashMap 的缓存</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#参考与感谢"><span class="nav-number">5.</span> <span class="nav-text">参考与感谢</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
 
       
 
@@ -730,6 +915,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=6.3.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=6.3.0"></script>
+
+
 
   
 
@@ -742,6 +931,17 @@
 
 
 
+  
+    <script type="text/javascript">
+      (function(d, s) {
+        var j, e = d.getElementsByTagName(s)[0];
+        if (typeof LivereTower === 'function') { return; }
+        j = d.createElement(s);
+        j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+        j.async = true;
+        e.parentNode.insertBefore(j, e);
+      })(document, 'script');
+    </script>
   
 
 

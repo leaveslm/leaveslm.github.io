@@ -4,6 +4,28 @@
 
     
   <url>
+    <loc>http://leaveslm.github.io/2018/08/14/2018-2018-08-14-%E5%9F%BA%E4%BA%8E-LinkedHashMap-%E5%AE%9E%E7%8E%B0%E6%9C%AC%E5%9C%B0%E7%BC%93%E5%AD%98/</loc>
+    <lastmod>2018-08-14T06:26:00.000Z</lastmod>
+    <data>
+        <display>
+        <title>基于 LinkedHashMap 实现本地缓存</title>
+        <pubTime>2018-08-14T06:26:00.000Z</pubTime>
+        
+        <tag>java</tag>
+         
+        <tag>缓存</tag>
+         
+         
+           
+             
+              <breadCrumb title="缓存" url="http://leaveslm.github.io/categories/%E7%BC%93%E5%AD%98/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://leaveslm.github.io/2017/09/24/2017-2017-09-24-%E5%9C%B0%E5%9B%BE%E5%9D%90%E6%A0%87%E8%BD%AC%E6%8D%A2/</loc>
     <lastmod>2018-08-14T02:23:48.607Z</lastmod>
     <data>
@@ -64,31 +86,7 @@
          
            
              
-              <breadCrumb title="代码" url="http://leaveslm.github.io/categories/%E4%BB%A3%E7%A0%81/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://leaveslm.github.io/2018/07/30/2018-2018-07-30-Plupload-%E6%96%87%E4%BB%B6%E6%96%AD%E7%82%B9%E7%BB%AD%E4%BC%A0-%E6%96%87%E4%BB%B6%E5%88%86%E5%9D%97%E4%B8%8A%E4%BC%A0/</loc>
-    <lastmod>2018-08-06T05:54:00.000Z</lastmod>
-    <data>
-        <display>
-        <title>Plupload 文件断点续传，文件分块上传</title>
-        <pubTime>2018-07-30T06:11:01.000Z</pubTime>
-        
-        <tag>java</tag>
-         
-        <tag>spring boot</tag>
-         
-        <tag>断点续传</tag>
-         
-         
-           
-             
-              <breadCrumb title="代码" url="http://leaveslm.github.io/categories/%E4%BB%A3%E7%A0%81/"/>
+              <breadCrumb title="spring boot" url="http://leaveslm.github.io/categories/spring-boot/"/>
           
         </display>
     </data>
@@ -112,7 +110,31 @@
          
            
              
-              <breadCrumb title="代码" url="http://leaveslm.github.io/categories/%E4%BB%A3%E7%A0%81/"/>
+              <breadCrumb title="后端" url="http://leaveslm.github.io/categories/%E5%90%8E%E7%AB%AF/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://leaveslm.github.io/2018/07/30/2018-2018-07-30-Plupload-%E6%96%87%E4%BB%B6%E6%96%AD%E7%82%B9%E7%BB%AD%E4%BC%A0-%E6%96%87%E4%BB%B6%E5%88%86%E5%9D%97%E4%B8%8A%E4%BC%A0/</loc>
+    <lastmod>2018-08-06T05:54:00.000Z</lastmod>
+    <data>
+        <display>
+        <title>Plupload 文件断点续传，文件分块上传</title>
+        <pubTime>2018-07-30T06:11:01.000Z</pubTime>
+        
+        <tag>java</tag>
+         
+        <tag>spring boot</tag>
+         
+        <tag>断点续传</tag>
+         
+         
+           
+             
+              <breadCrumb title="后端" url="http://leaveslm.github.io/categories/%E5%90%8E%E7%AB%AF/"/>
           
         </display>
     </data>
@@ -130,9 +152,9 @@
         <title>Linux 安装 Redis</title>
         <pubTime>2018-07-25T01:51:00.000Z</pubTime>
         
-        <tag>redis</tag>
-         
         <tag>linux</tag>
+         
+        <tag>redis</tag>
          
          
            
@@ -152,9 +174,9 @@
         <title>Linux 安装 MySQL 5.7</title>
         <pubTime>2018-07-18T09:05:28.000Z</pubTime>
         
-        <tag>linux</tag>
-         
         <tag>mysql</tag>
+         
+        <tag>linux</tag>
          
          
            
