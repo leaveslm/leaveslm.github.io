@@ -30,7 +30,6 @@
         <category>锁</category>
       </categories>
       <tags>
-        <tag>java</tag>
         <tag>redis</tag>
         <tag>分布式锁</tag>
       </tags>
@@ -40,10 +39,9 @@
     <url>%2F2018%2F08%2F06%2F2018-2018-08-06-Spring-Boot-%E5%9B%BD%E9%99%85%E5%8C%96%2F</url>
     <content type="text"><![CDATA[前言在信息技术领域，国际化与本地化（英文：internationalization and localization）是指修改软件使之能适应目标市场的语言、地区差异以及技术需要。 国际化是指在设计软件，将软件与特定语言及地区脱钩的过程。当软件被移植到不同的语言及地区时，软件本身不用做内部工程上的改变或修正。本地化则是指当移植软件时，加上与特定区域设置有关的信息和翻译文件的过程。 国际化和本地化之间的区别虽然微妙，但却很重要。国际化意味着产品有适用于任何地方的“潜力”；本地化则是为了更适合于“特定”地方的使用，而另外增添的特色。用一项产品来说，国际化只需做一次，但本地化则要针对不同的区域各做一次。这两者之间是互补的，并且两者合起来才能让一个系统适用于各地。 基于他们的英文单字长度过长，常被分别简称成i18n（18意味着在“internationalization”这个单字中，i和n之间有18个字母）及L10n。使用大写的L以利区分i18n中的i和易于分辨小写l与1。 @国际化与本地化zh.wikipedia.org/wiki/国际化与本地化 定义国际化配置文件国际化配置文件 messages.properties（默认，当找不到语言的配置的时候，使用该文件语言进行展示） messages_en.properties（英语） messages_de.propertie（德语） messages_fr.properties（法语） messages_zh_TW.properties（中文-繁体） 将这些文件放到 classpath:resources/i18n 目录下即可，如图： 国际化配置文件内容messages.properties12ERROR=unknownSUCCESS=unknown messages_en.properties12ERROR=errorSUCCESS=success messages_de.properties12ERROR=FehlerSUCCESS=Erfolg messages_fr.properties12ERROR=ÉchecSUCCESS=Le succès messages_zh_TW.properties12ERROR=失敗（繁體）SUCCESS=成功（繁體） Spring Boot 配置定义一个区域解析器，在应用程序上下文中注册一个 LocaleResolver 类型的区域解析器 Bean，Bean的名称设置为 localeResolver，这样 DispatcherServlet 才能自动侦测到它。 方法一添加 I18nConfiguration 配置类，使用 Accept-Language Header 区域解析器特点：配置简单，使用方便，推荐使用 1234567891011121314151617181920212223242526272829303132333435/** * 国际化配置 * * @author Leaves * @version 1.0.0 * @date 2018/8/6 */@Configurationpublic class I18nConfiguration &#123; /** * Accept-Language Header 区域解析器 */ @Bean(value = "localeResolver") public LocaleResolver acceptHeaderLocaleResolver() &#123; AcceptHeaderLocaleResolver acceptHeaderLocaleResolver = new AcceptHeaderLocaleResolver(); acceptHeaderLocaleResolver.setDefaultLocale(Locale.US); return acceptHeaderLocaleResolver; &#125; /** * 加载国际化配置文件资源 */ @Bean public ReloadableResourceBundleMessageSource messageSource() &#123; ReloadableResourceBundleMessageSource messageSource = new ReloadableResourceBundleMessageSource(); //设置国际化配置文件存放目录 messageSource.setBasename("classpath:i18n/messages"); //设置加载资源的缓存失效时间，-1表示永久有效，默认为-1 messageSource.setCacheSeconds(-1); //设定 Resource Bundle 编码方式，默认为UTF-8 messageSource.setDefaultEncoding("UTF-8"); return messageSource; &#125;&#125; 方法二使用 SessionLocaleResolver 或 CookieLocaleResolver 12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152/** * 国际化配置 * * @author Leaves * @version 1.0.0 * @date 2018/8/6 */@Configurationpublic class I18nConfiguration extends WebMvcConfigurerAdapter &#123; /** * Session 区域解析器 */ @Bean(value = "localeResolver") public LocaleResolver sessionLocaleResolver() &#123; SessionLocaleResolver sessionLocaleResolver = new SessionLocaleResolver(); sessionLocaleResolver.setDefaultLocale(Locale.US); return sessionLocaleResolver; &#125; /** * 注册 LocaleChangeInterceptor 拦截器，并将其引用到任何需要支持多种语言的处理器映射 */ private LocaleChangeInterceptor localeChangeInterceptor() &#123; LocaleChangeInterceptor localeChangeInterceptor = new LocaleChangeInterceptor(); localeChangeInterceptor.setParamName("locale"); return localeChangeInterceptor; &#125; /** * LocaleChangeInterceptor 拦截器注册 */ @Override public void addInterceptors(InterceptorRegistry registry) &#123; registry.addInterceptor(localeChangeInterceptor()); &#125; /** * 加载国际化配置文件资源 */ @Bean public ReloadableResourceBundleMessageSource messageSource() &#123; ReloadableResourceBundleMessageSource messageSource = new ReloadableResourceBundleMessageSource(); //设置国际化配置文件存放目录 messageSource.setBasename("classpath:i18n/messages"); //设置加载资源的缓存失效时间，-1表示永久有效，默认为-1 messageSource.setCacheSeconds(-1); //设定 Resource Bundle 编码方式，默认为UTF-8 messageSource.setDefaultEncoding("UTF-8"); return messageSource; &#125;&#125; 国际化使用Spring Boot 通过以上两步就完成了国际化配置，那怎么使用呢？首先定义一个测试接口123456789@Autowiredprivate MessageSource messageSource;@RequestMapping(value = "/test", method = RequestMethod.GET)public String languageTest(@RequestParam(value = "result", required = false) String result) &#123; Locale locale = LocaleContextHolder.getLocale(); logger.info(locale.toString()); return messageSource.getMessage(result == null ? "SUCCESS" : result, null, "unknown", locale);&#125; LocaleContextHolder.getLocale() 是获取语言的关键方法，通过 MessageSource 的 String getMessage(String var1, Object[] var2, String var3, Locale var4) 接口获取国际化配置文件（messages_xx.properties）中的不同语言内容。 测试接下来我将使用 Postman 工具来进行测试设置语言的关键在于 HTTP Header 上加上 Accept-Language 参数 下面是两个国际化方法的几种语言测试结果： 方法一测试结果 方法二测试结果 到这里，Spring Boot 的国际化就完成了~~ 区域解析器AcceptHeaderLocaleResolverSpring 采用的默认区域解析器是 AcceptHeaderLocaleResolver。它通过检验 HTTP 请求的 Accept-Language 头部来解析区域。这个头部是由用户的 Web 浏览器根据底层操作系统的区域设置进行设定或者 Web 端设定。 SessionLocaleResolverSession 区域解析器，会从用户请求相关的 Session 中获取本地化信息。如果不存在，它会根据 Accept-Language 头部确定默认区域，只针对当前的会话有效，Session 失效，还原为默认状态。 CookieLocaleResolverCookie 区域解析器，检查客户端中的 Cookie 是否包含本地化信息，如果有的话就使用。当配置这个解析器的时候，可以指定 Cookie 名，以及 Cookie 的最长生存期。 FixedLocaleResolver固定区域解析器，一直使用固定的 Local, 改变 Local 是不支持的，一旦程序启动时设定，则无法改变 Local。 通过 url 中的参数修改语言除了显式调用 LocaleResolver.setLocale() 来修改用户的区域之外，还可以将 LocaleChangeInterceptor 拦截器应用到处理程序映射中（如方法二），它会发现当前 HTTP 请求中出现的特殊参数。其中的参数名称可以通过拦截器的 paramName (默认值 locale) 属性进行自定义。如果这种参数出现在当前请求中，拦截器就会根据参数值来改变区域。注：LocaleChangeInterceptor 可以和 SessionLocaleResolver、CookieLocaleResolver 一起使用，但不能和FixedLocaleResolver 一起使用，否则会抛出异常信息。]]></content>
       <categories>
-        <category>spring boot</category>
+        <category>Spring Boot</category>
       </categories>
       <tags>
-        <tag>java</tag>
         <tag>spring boot</tag>
         <tag>国际化</tag>
       </tags>
@@ -56,7 +54,6 @@
         <category>后端</category>
       </categories>
       <tags>
-        <tag>java</tag>
         <tag>spring boot</tag>
         <tag>断点续传</tag>
       </tags>
@@ -69,7 +66,6 @@
         <category>后端</category>
       </categories>
       <tags>
-        <tag>java</tag>
         <tag>spring boot</tag>
         <tag>断点续传</tag>
       </tags>
@@ -82,8 +78,8 @@
         <category>基础服务</category>
       </categories>
       <tags>
-        <tag>linux</tag>
         <tag>redis</tag>
+        <tag>linux</tag>
       </tags>
   </entry>
   <entry>
