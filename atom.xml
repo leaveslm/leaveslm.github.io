@@ -197,9 +197,9 @@
       <category term="基础服务" scheme="http://leaveslm.github.io/categories/%E5%9F%BA%E7%A1%80%E6%9C%8D%E5%8A%A1/"/>
     
     
-      <category term="redis" scheme="http://leaveslm.github.io/tags/redis/"/>
-    
       <category term="linux" scheme="http://leaveslm.github.io/tags/linux/"/>
+    
+      <category term="redis" scheme="http://leaveslm.github.io/tags/redis/"/>
     
   </entry>
   
